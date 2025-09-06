@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thailands",
+  "info": {
+    "singularName": "thailand",
+    "pluralName": "thailands",
+    "displayName": "Thailand",
+    "description": "Información detallada sobre Tailandia como destino de estudio y trabajo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Thailand"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "whyChooseTitle": {
+      "type": "string",
+      "default": "¿Por qué elegir Tailandia?"
+    },
+    "whyChooseItems": {
+      "type": "json"
+    },
+    "hospitalityTitle": {
+      "type": "string",
+      "default": "Hospitalidad Tailandesa"
+    },
+    "hospitalityDescription": {
+      "type": "string",
+      "default": "Experiencia en la famosa hospitalidad tailandesa y turismo"
+    },
+    "hospitalityIcon": {
+      "type": "string",
+      "default": "🙏"
+    },
+    "educationTitle": {
+      "type": "string",
+      "default": "Cultura Rica"
+    },
+    "educationDescription": {
+      "type": "string",
+      "default": "Inmersión en una de las culturas más fascinantes del mundo"
+    },
+    "educationIcon": {
+      "type": "string",
+      "default": "🏛️"
+    },
+    "cultureTitle": {
+      "type": "string",
+      "default": "Costo de Vida Bajo"
+    },
+    "cultureDescription": {
+      "type": "string",
+      "default": "Excelente relación calidad-precio para vivir y estudiar"
+    },
+    "cultureIcon": {
+      "type": "string",
+      "default": "💰"
+    },
+    "languageTitle": {
+      "type": "string",
+      "default": "Aprendizaje de Idiomas"
+    },
+    "languageDescription": {
+      "type": "string",
+      "default": "Mejora tu inglés y aprende tailandés básico"
+    },
+    "languageIcon": {
+      "type": "string",
+      "default": "🗣️"
+    },
+    "qualityTitle": {
+      "type": "string",
+      "default": "Aventura y Naturaleza"
+    },
+    "qualityDescription": {
+      "type": "string",
+      "default": "Playas paradisíacas, montañas y selvas tropicales"
+    },
+    "qualityIcon": {
+      "type": "string",
+      "default": "🏝️"
+    },
+    "opportunitiesTitle": {
+      "type": "string",
+      "default": "Oportunidades de Negocio"
+    },
+    "opportunitiesDescription": {
+      "type": "string",
+      "default": "Centro de negocios en el sudeste asiático"
+    },
+    "opportunitiesIcon": {
+      "type": "string",
+      "default": "💼"
+    },
+    "statisticsTitle": {
+      "type": "string",
+      "default": "Tailandia en números"
+    },
+    "statistics": {
+      "type": "json"
+    },
+    "featuresTitle": {
+      "type": "string",
+      "default": "Características de Tailandia"
+    },
+    "features": {
+      "type": "json"
+    },
+    "travelTipsTitle": {
+      "type": "string",
+      "default": "Tips de viaje para Tailandia"
+    },
+    "travelTips": {
+      "type": "json"
+    },
+    "programs": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "overview": {
+      "type": "json"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "accommodation": {
+      "type": "json"
+    },
+    "transportation": {
+      "type": "json"
+    },
+    "climate": {
+      "type": "json"
+    },
+    "culture": {
+      "type": "json"
+    },
+    "education": {
+      "type": "json"
+    },
+    "workOpportunities": {
+      "type": "json"
+    },
+    "visaInfo": {
+      "type": "json"
+    },
+    "costOfLiving": {
+      "type": "json"
+    },
+    "safety": {
+      "type": "json"
+    },
+    "attractions": {
+      "type": "json"
+    },
+    "events": {
+      "type": "json"
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "seoKeywords": {
+      "type": "json"
+    }
+  }
+}

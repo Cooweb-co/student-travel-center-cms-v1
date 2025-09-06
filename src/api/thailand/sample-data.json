@@ -1,0 +1,272 @@
+{
+  "thailandData": [
+    {
+      "title": "Thailand",
+      "slug": "thailand",
+      "description": "Descubre Tailandia, un país que combina tradición milenaria con modernidad. Oportunidades únicas en turismo, hospitalidad, enseñanza de inglés y negocios en el corazón del sudeste asiático.",
+      "shortDescription": "Experiencia única en turismo, cultura tailandesa y oportunidades de negocio",
+      "featured": true,
+      "active": true,
+      "whyChooseTitle": "¿Por qué elegir Tailandia?",
+      "whyChooseItems": [
+        {
+          "title": "Hospitalidad Tailandesa",
+          "description": "Experiencia en la famosa hospitalidad tailandesa y turismo",
+          "icon": "🙏"
+        },
+        {
+          "title": "Cultura Rica",
+          "description": "Inmersión en una de las culturas más fascinantes del mundo",
+          "icon": "🏛️"
+        },
+        {
+          "title": "Costo de Vida Bajo",
+          "description": "Excelente relación calidad-precio para vivir y estudiar",
+          "icon": "💰"
+        },
+        {
+          "title": "Aprendizaje de Idiomas",
+          "description": "Mejora tu inglés y aprende tailandés básico",
+          "icon": "🗣️"
+        },
+        {
+          "title": "Aventura y Naturaleza",
+          "description": "Playas paradisíacas, montañas y selvas tropicales",
+          "icon": "🏝️"
+        },
+        {
+          "title": "Oportunidades de Negocio",
+          "description": "Centro de negocios en el sudeste asiático",
+          "icon": "💼"
+        }
+      ],
+      "statisticsTitle": "Tailandia en números",
+      "statistics": [
+        {
+          "value": "70M+",
+          "label": "Habitantes"
+        },
+        {
+          "value": "40M+",
+          "label": "Turistas anuales"
+        },
+        {
+          "value": "95%",
+          "label": "Budistas"
+        },
+        {
+          "value": "1,000+",
+          "label": "Islas"
+        }
+      ],
+      "featuresTitle": "Características de Tailandia",
+      "features": [
+        {
+          "title": "Hospitalidad Tailandesa",
+          "description": "Famosa por su servicio excepcional y sonrisa tailandesa",
+          "icon": "🙏"
+        },
+        {
+          "title": "Cultura Milenaria",
+          "description": "Templos antiguos, tradiciones budistas y arte tradicional",
+          "icon": "🏛️"
+        },
+        {
+          "title": "Naturaleza Exuberante",
+          "description": "Playas tropicales, montañas y selvas vírgenes",
+          "icon": "🏝️"
+        },
+        {
+          "title": "Gastronomía Mundial",
+          "description": "Una de las cocinas más reconocidas internacionalmente",
+          "icon": "🍜"
+        }
+      ],
+      "travelTipsTitle": "Tips de viaje para Tailandia",
+      "travelTips": [
+        {
+          "title": "Visa de Trabajo",
+          "description": "Proceso de visa relativamente sencillo para trabajos calificados."
+        },
+        {
+          "title": "Cultura Local",
+          "description": "Respeta las tradiciones budistas y la monarquía tailandesa."
+        },
+        {
+          "title": "Clima Tropical",
+          "description": "Preparación para clima cálido y húmedo todo el año."
+        },
+        {
+          "title": "Transporte",
+          "description": "Sistema de transporte público eficiente y económico."
+        }
+      ],
+      "programs": [
+        "work-and-study",
+        "internship",
+        "volunteer"
+      ],
+      "requirements": [
+        "Nivel de inglés B1+",
+        "Experiencia en turismo o enseñanza",
+        "Mayor de 21 años",
+        "Título universitario preferible"
+      ],
+      "overview": {
+        "highlights": [
+          {
+            "title": "Hospitalidad Tailandesa",
+            "description": "Experiencia en la famosa hospitalidad tailandesa y turismo",
+            "icon": "Heart"
+          },
+          {
+            "title": "Cultura Rica",
+            "description": "Inmersión en una de las culturas más fascinantes del mundo",
+            "icon": "Temple"
+          },
+          {
+            "title": "Costo de Vida Bajo",
+            "description": "Excelente relación calidad-precio para vivir y estudiar",
+            "icon": "DollarSign"
+          }
+        ],
+        "features": [
+          {
+            "title": "Aprendizaje de Idiomas",
+            "description": "Mejora tu inglés y aprende tailandés básico"
+          },
+          {
+            "title": "Aventura y Naturaleza",
+            "description": "Playas paradisíacas, montañas y selvas tropicales"
+          },
+          {
+            "title": "Oportunidades de Negocio",
+            "description": "Centro de negocios en el sudeste asiático"
+          }
+        ]
+      },
+      "pricing": {
+        "accommodation": "200-500 USD/mes",
+        "food": "150-300 USD/mes",
+        "transportation": "50-100 USD/mes",
+        "medicalInsurance": "30-50 USD/mes",
+        "visaFee": "50-100 USD",
+        "languageCourse": "200-400 USD/mes"
+      },
+      "accommodation": {
+        "sharedAccommodation": "200-400 USD/mes",
+        "privateAccommodation": "400-800 USD/mes",
+        "hotelStaff": "Alojamiento incluido",
+        "apartment": "300-600 USD/mes"
+      },
+      "transportation": {
+        "publicTransport": "Sistema de BTS, MRT y autobuses",
+        "taxi": "Muy económico y disponible",
+        "tukTuk": "Experiencia local única",
+        "motorbike": "Opcional, 50-100 USD/mes"
+      },
+      "climate": {
+        "description": "Clima tropical con estación seca y lluviosa",
+        "temperature": "25-35°C promedio anual",
+        "rainfall": "Lluvias abundantes de mayo a octubre",
+        "seasons": "Estación seca (noviembre-abril) y lluviosa (mayo-octubre)"
+      },
+      "culture": {
+        "language": "Tailandés (oficial) e Inglés (ampliamente hablado)",
+        "religion": "Budismo (95%)",
+        "traditions": "Templos budistas, festivales tradicionales, arte tailandés",
+        "festivals": "Songkran (Año Nuevo), Loi Krathong, Visakha Bucha"
+      },
+      "education": {
+        "universities": "Universidades internacionales y locales",
+        "languageSchools": "Cursos de tailandés e inglés disponibles",
+        "quality": "Educación de calidad con opciones internacionales",
+        "costs": "Muy accesible comparado con otros países"
+      },
+      "workOpportunities": {
+        "fullTime": "Posiciones en turismo, enseñanza y negocios",
+        "sectors": "Turismo, hospitalidad, enseñanza de inglés, exportación",
+        "minimumWage": "Salario competitivo para extranjeros",
+        "networking": "Excelentes oportunidades de networking regional"
+      },
+      "visaInfo": {
+        "type": "Visa de Trabajo",
+        "duration": "Hasta 1 año (renovable)",
+        "requirements": "Contrato de trabajo, certificados médicos, antecedentes penales",
+        "processingTime": "1-2 semanas"
+      },
+      "costOfLiving": {
+        "monthly": "500-1000 USD",
+        "accommodation": "200-500 USD/mes",
+        "food": "150-300 USD/mes",
+        "transport": "50-100 USD/mes",
+        "entertainment": "100-200 USD/mes"
+      },
+      "safety": {
+        "level": "Seguro en general",
+        "crimeRate": "Baja en áreas turísticas",
+        "emergency": "191 (policía), 1669 (ambulancia)",
+        "tips": "Evitar áreas conflictivas y respetar la cultura local"
+      },
+      "attractions": [
+        "Templo del Buda de Esmeralda",
+        "Wat Pho",
+        "Islas Phi Phi",
+        "Chiang Mai",
+        "Mercado flotante de Damnoen Saduak",
+        "Parque Nacional de Khao Yai"
+      ],
+      "events": [
+        "Songkran (13-15 de abril)",
+        "Loi Krathong (noviembre)",
+        "Festival de las Luces",
+        "Carnaval de Pattaya",
+        "Festival de Comida de Bangkok"
+      ],
+      "testimonials": [
+        {
+          "name": "María González",
+          "content": "Mi experiencia en Tailandia fue increíble. La cultura, la gente y las oportunidades de trabajo son únicas.",
+          "program": "Work and Study",
+          "rating": 5
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "content": "Trabajar en el sector turístico en Bangkok me permitió crecer profesionalmente y conocer Asia.",
+          "program": "Internship",
+          "rating": 5
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Necesito visa para trabajar en Tailandia?",
+          "answer": "Sí, necesitas una visa de trabajo que generalmente gestiona tu empleador. Te ayudamos con todo el proceso."
+        },
+        {
+          "question": "¿Puedo trabajar en Tailandia sin experiencia previa?",
+          "answer": "Se requiere experiencia previa en turismo o enseñanza, pero también ofrecemos programas de formación."
+        },
+        {
+          "question": "¿Qué nivel de inglés necesito?",
+          "answer": "Recomendamos nivel B1 o superior, ya que el inglés es ampliamente hablado en el sector turístico."
+        },
+        {
+          "question": "¿Es caro vivir en Tailandia?",
+          "answer": "Tailandia tiene uno de los costos de vida más bajos del sudeste asiático, muy accesible para extranjeros."
+        }
+      ],
+      "seoTitle": "Trabaja y Estudia en Tailandia - Programas Internacionales",
+      "seoDescription": "Descubre las mejores oportunidades de trabajo y estudio en Tailandia. Programas de turismo, hospitalidad y cultura tailandesa.",
+      "seoKeywords": [
+        "Tailandia",
+        "trabajar en Tailandia",
+        "estudiar en Tailandia",
+        "turismo Tailandia",
+        "cultura tailandesa",
+        "visa de trabajo",
+        "Bangkok",
+        "Chiang Mai"
+      ]
+    }
+  ]
+}

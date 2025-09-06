@@ -1,0 +1,272 @@
+{
+  "vietnamData": [
+    {
+      "title": "Vietnam",
+      "slug": "vietnam",
+      "description": "Descubre Vietnam, un país que combina historia milenaria con modernidad. Oportunidades únicas en turismo, enseñanza de inglés, negocios y tecnología en uno de los destinos más fascinantes del sudeste asiático.",
+      "shortDescription": "Cultura milenaria con costo de vida bajo y oportunidades de negocio",
+      "featured": true,
+      "active": true,
+      "whyChooseTitle": "¿Por qué elegir Vietnam?",
+      "whyChooseItems": [
+        {
+          "title": "Cultura Milenaria",
+          "description": "Inmersión en una de las culturas más ricas del sudeste asiático",
+          "icon": "🏛️"
+        },
+        {
+          "title": "Costo de Vida Bajo",
+          "description": "Excelente relación calidad-precio para vivir y estudiar",
+          "icon": "💰"
+        },
+        {
+          "title": "Gastronomía Mundial",
+          "description": "Una de las cocinas más reconocidas internacionalmente",
+          "icon": "🍜"
+        },
+        {
+          "title": "Aprendizaje de Idiomas",
+          "description": "Mejora tu inglés y aprende vietnamita básico",
+          "icon": "🗣️"
+        },
+        {
+          "title": "Naturaleza Exuberante",
+          "description": "Desde montañas hasta playas tropicales",
+          "icon": "🏔️"
+        },
+        {
+          "title": "Oportunidades de Negocio",
+          "description": "Economía en crecimiento con muchas oportunidades",
+          "icon": "💼"
+        }
+      ],
+      "statisticsTitle": "Vietnam en números",
+      "statistics": [
+        {
+          "value": "97M+",
+          "label": "Habitantes"
+        },
+        {
+          "value": "15M+",
+          "label": "Turistas anuales"
+        },
+        {
+          "value": "95%",
+          "label": "Población urbana"
+        },
+        {
+          "value": "1,000+",
+          "label": "Años de historia"
+        }
+      ],
+      "featuresTitle": "Características de Vietnam",
+      "features": [
+        {
+          "title": "Cultura Milenaria",
+          "description": "Historia rica y tradiciones ancestrales",
+          "icon": "🏛️"
+        },
+        {
+          "title": "Gastronomía Mundial",
+          "description": "Una de las cocinas más reconocidas del mundo",
+          "icon": "🍜"
+        },
+        {
+          "title": "Naturaleza Exuberante",
+          "description": "Desde montañas hasta playas tropicales",
+          "icon": "🏔️"
+        },
+        {
+          "title": "Economía en Crecimiento",
+          "description": "Oportunidades de negocio y empleo",
+          "icon": "📈"
+        }
+      ],
+      "travelTipsTitle": "Tips de viaje para Vietnam",
+      "travelTips": [
+        {
+          "title": "Visa de Trabajo",
+          "description": "Proceso de visa relativamente sencillo para trabajos calificados."
+        },
+        {
+          "title": "Cultura Local",
+          "description": "Respeto por las tradiciones familiares y la cultura local."
+        },
+        {
+          "title": "Clima Tropical",
+          "description": "Preparación para clima cálido y húmedo con estaciones marcadas."
+        },
+        {
+          "title": "Transporte",
+          "description": "Sistema de transporte público eficiente y económico."
+        }
+      ],
+      "programs": [
+        "work-and-study",
+        "internship",
+        "volunteer"
+      ],
+      "requirements": [
+        "Nivel de inglés B1+",
+        "Experiencia en turismo o enseñanza",
+        "Mayor de 21 años",
+        "Título universitario preferible"
+      ],
+      "overview": {
+        "highlights": [
+          {
+            "title": "Cultura Milenaria",
+            "description": "Inmersión en una de las culturas más ricas del sudeste asiático",
+            "icon": "Temple"
+          },
+          {
+            "title": "Costo de Vida Bajo",
+            "description": "Excelente relación calidad-precio para vivir y estudiar",
+            "icon": "DollarSign"
+          },
+          {
+            "title": "Gastronomía Mundial",
+            "description": "Una de las cocinas más reconocidas internacionalmente",
+            "icon": "Utensils"
+          }
+        ],
+        "features": [
+          {
+            "title": "Aprendizaje de Idiomas",
+            "description": "Mejora tu inglés y aprende vietnamita básico"
+          },
+          {
+            "title": "Naturaleza Exuberante",
+            "description": "Desde montañas hasta playas tropicales"
+          },
+          {
+            "title": "Oportunidades de Negocio",
+            "description": "Economía en crecimiento con muchas oportunidades"
+          }
+        ]
+      },
+      "pricing": {
+        "accommodation": "200-500 USD/mes",
+        "food": "150-300 USD/mes",
+        "transportation": "50-100 USD/mes",
+        "medicalInsurance": "30-50 USD/mes",
+        "visaFee": "50-100 USD",
+        "languageCourse": "200-400 USD/mes"
+      },
+      "accommodation": {
+        "sharedAccommodation": "200-400 USD/mes",
+        "privateAccommodation": "400-800 USD/mes",
+        "servicedApartment": "500-1000 USD/mes",
+        "studentHousing": "150-300 USD/mes"
+      },
+      "transportation": {
+        "publicTransport": "Sistema de autobuses y mototaxis",
+        "taxi": "Muy económico y disponible",
+        "motorbike": "Opcional, 50-100 USD/mes",
+        "domesticFlight": "Vuelos domésticos económicos"
+      },
+      "climate": {
+        "description": "Clima tropical con estaciones marcadas",
+        "temperature": "20-35°C promedio anual",
+        "rainfall": "Lluvias abundantes de mayo a octubre",
+        "seasons": "Estación seca (noviembre-abril) y lluviosa (mayo-octubre)"
+      },
+      "culture": {
+        "language": "Vietnamita (oficial) e Inglés (ampliamente hablado)",
+        "religion": "Budismo, Taoísmo, Confucianismo",
+        "traditions": "Tradiciones familiares, festivales tradicionales, arte vietnamita",
+        "festivals": "Tet (Año Nuevo), Festival de la Luna, Festival de la Flor"
+      },
+      "education": {
+        "universities": "Universidades locales e internacionales",
+        "languageSchools": "Cursos de vietnamita e inglés disponibles",
+        "quality": "Educación de calidad con opciones internacionales",
+        "costs": "Muy accesible comparado con otros países"
+      },
+      "workOpportunities": {
+        "fullTime": "Posiciones en turismo, enseñanza y tecnología",
+        "sectors": "Turismo, enseñanza de inglés, tecnología, exportación",
+        "minimumWage": "Salario competitivo para extranjeros",
+        "networking": "Excelentes oportunidades de networking regional"
+      },
+      "visaInfo": {
+        "type": "Visa de Trabajo",
+        "duration": "Hasta 1 año (renovable)",
+        "requirements": "Contrato de trabajo, certificados médicos, antecedentes penales",
+        "processingTime": "1-2 semanas"
+      },
+      "costOfLiving": {
+        "monthly": "500-1000 USD",
+        "accommodation": "200-500 USD/mes",
+        "food": "150-300 USD/mes",
+        "transport": "50-100 USD/mes",
+        "entertainment": "100-200 USD/mes"
+      },
+      "safety": {
+        "level": "Seguro en general",
+        "crimeRate": "Baja en áreas turísticas",
+        "emergency": "113 (policía), 115 (ambulancia)",
+        "tips": "Evitar áreas conflictivas y respetar la cultura local"
+      },
+      "attractions": [
+        "Bahía de Halong",
+        "Hoi An",
+        "Ho Chi Minh City",
+        "Hanoi",
+        "Delta del Mekong",
+        "Sapa"
+      ],
+      "events": [
+        "Tet (Año Nuevo Vietnamita)",
+        "Festival de la Luna",
+        "Festival de la Flor",
+        "Festival de Hue",
+        "Festival de la Comida"
+      ],
+      "testimonials": [
+        {
+          "name": "Luna Nguyen",
+          "content": "Vietnam me ofreció una experiencia cultural única y oportunidades de trabajo increíbles.",
+          "program": "Work and Study",
+          "rating": 5
+        },
+        {
+          "name": "Carlos Mendoza",
+          "content": "Enseñar inglés en Vietnam fue una experiencia enriquecedora. La cultura es fascinante.",
+          "program": "Internship",
+          "rating": 5
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Necesito visa para trabajar en Vietnam?",
+          "answer": "Sí, necesitas una visa de trabajo que generalmente gestiona tu empleador. Te ayudamos con todo el proceso."
+        },
+        {
+          "question": "¿Puedo trabajar en Vietnam sin experiencia previa?",
+          "answer": "Se requiere experiencia previa en turismo o enseñanza, pero también ofrecemos programas de formación."
+        },
+        {
+          "question": "¿Qué nivel de inglés necesito?",
+          "answer": "Recomendamos nivel B1 o superior, ya que el inglés es ampliamente hablado en el sector turístico."
+        },
+        {
+          "question": "¿Es caro vivir en Vietnam?",
+          "answer": "Vietnam tiene uno de los costos de vida más bajos del sudeste asiático, muy accesible para extranjeros."
+        }
+      ],
+      "seoTitle": "Trabaja y Estudia en Vietnam - Programas Internacionales",
+      "seoDescription": "Descubre las mejores oportunidades de trabajo y estudio en Vietnam. Cultura milenaria con costo de vida bajo.",
+      "seoKeywords": [
+        "Vietnam",
+        "trabajar en Vietnam",
+        "estudiar en Vietnam",
+        "cultura milenaria",
+        "costo de vida bajo",
+        "visa de trabajo",
+        "sudeste asiático",
+        "gastronomía vietnamita"
+      ]
+    }
+  ]
+}

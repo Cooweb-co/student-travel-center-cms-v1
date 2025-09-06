@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "collectionName": "united_states",
+  "info": {
+    "singularName": "united-state",
+    "pluralName": "united-states",
+    "displayName": "United States",
+    "description": "Información detallada sobre Estados Unidos como destino de estudio y trabajo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "United States"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "whyChooseTitle": {
+      "type": "string",
+      "default": "¿Por qué elegir Estados Unidos?"
+    },
+    "whyChooseItems": {
+      "type": "json"
+    },
+    "hospitalityTitle": {
+      "type": "string",
+      "default": "Educación de Excelencia"
+    },
+    "hospitalityDescription": {
+      "type": "string",
+      "default": "Universidades de prestigio mundial"
+    },
+    "hospitalityIcon": {
+      "type": "string",
+      "default": "🎓"
+    },
+    "educationTitle": {
+      "type": "string",
+      "default": "Oportunidades Profesionales"
+    },
+    "educationDescription": {
+      "type": "string",
+      "default": "Carrera en empresas multinacionales y startups"
+    },
+    "educationIcon": {
+      "type": "string",
+      "default": "💼"
+    },
+    "cultureTitle": {
+      "type": "string",
+      "default": "Cultura Diversa"
+    },
+    "cultureDescription": {
+      "type": "string",
+      "default": "País multicultural con diversidad étnica"
+    },
+    "cultureIcon": {
+      "type": "string",
+      "default": "🌍"
+    },
+    "languageTitle": {
+      "type": "string",
+      "default": "Idioma Inglés"
+    },
+    "languageDescription": {
+      "type": "string",
+      "default": "Inglés como idioma oficial en su cuna"
+    },
+    "languageIcon": {
+      "type": "string",
+      "default": "🗣️"
+    },
+    "qualityTitle": {
+      "type": "string",
+      "default": "Calidad de Vida"
+    },
+    "qualityDescription": {
+      "type": "string",
+      "default": "Excelente calidad de vida y servicios públicos"
+    },
+    "qualityIcon": {
+      "type": "string",
+      "default": "🏠"
+    },
+    "opportunitiesTitle": {
+      "type": "string",
+      "default": "Innovación Tecnológica"
+    },
+    "opportunitiesDescription": {
+      "type": "string",
+      "default": "Hub tecnológico mundial con oportunidades únicas"
+    },
+    "opportunitiesIcon": {
+      "type": "string",
+      "default": "💻"
+    },
+    "statisticsTitle": {
+      "type": "string",
+      "default": "Estados Unidos en números"
+    },
+    "statistics": {
+      "type": "json"
+    },
+    "featuresTitle": {
+      "type": "string",
+      "default": "Características de Estados Unidos"
+    },
+    "features": {
+      "type": "json"
+    },
+    "travelTipsTitle": {
+      "type": "string",
+      "default": "Tips de viaje para Estados Unidos"
+    },
+    "travelTips": {
+      "type": "json"
+    },
+    "programs": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "overview": {
+      "type": "json"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "accommodation": {
+      "type": "json"
+    },
+    "transportation": {
+      "type": "json"
+    },
+    "climate": {
+      "type": "json"
+    },
+    "culture": {
+      "type": "json"
+    },
+    "education": {
+      "type": "json"
+    },
+    "workOpportunities": {
+      "type": "json"
+    },
+    "visaInfo": {
+      "type": "json"
+    },
+    "costOfLiving": {
+      "type": "json"
+    },
+    "safety": {
+      "type": "json"
+    },
+    "attractions": {
+      "type": "json"
+    },
+    "events": {
+      "type": "json"
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "seoKeywords": {
+      "type": "json"
+    }
+  }
+}
