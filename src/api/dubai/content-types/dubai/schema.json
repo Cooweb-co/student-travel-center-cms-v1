@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dubais",
+  "info": {
+    "singularName": "dubai",
+    "pluralName": "dubais",
+    "displayName": "Dubai",
+    "description": "Información detallada sobre Dubai como destino de estudio y trabajo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Dubai"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "whyChooseTitle": {
+      "type": "string",
+      "default": "¿Por qué elegir Dubai?"
+    },
+    "whyChooseItems": {
+      "type": "json"
+    },
+    "hospitalityTitle": {
+      "type": "string",
+      "default": "Centro Comercial Global"
+    },
+    "hospitalityDescription": {
+      "type": "string",
+      "default": "Hub de negocios y comercio en el Medio Oriente"
+    },
+    "hospitalityIcon": {
+      "type": "string",
+      "default": "🏢"
+    },
+    "educationTitle": {
+      "type": "string",
+      "default": "Educación Internacional"
+    },
+    "educationDescription": {
+      "type": "string",
+      "default": "Universidades de prestigio mundial"
+    },
+    "educationIcon": {
+      "type": "string",
+      "default": "🎓"
+    },
+    "cultureTitle": {
+      "type": "string",
+      "default": "Fusión Cultural"
+    },
+    "cultureDescription": {
+      "type": "string",
+      "default": "Mezcla única de tradición árabe y modernidad"
+    },
+    "cultureIcon": {
+      "type": "string",
+      "default": "🌏"
+    },
+    "languageTitle": {
+      "type": "string",
+      "default": "Idiomas Múltiples"
+    },
+    "languageDescription": {
+      "type": "string",
+      "default": "Árabe, inglés y más de 200 idiomas"
+    },
+    "languageIcon": {
+      "type": "string",
+      "default": "🗣️"
+    },
+    "qualityTitle": {
+      "type": "string",
+      "default": "Lujo y Modernidad"
+    },
+    "qualityDescription": {
+      "type": "string",
+      "default": "Infraestructura de clase mundial"
+    },
+    "qualityIcon": {
+      "type": "string",
+      "default": "🏙️"
+    },
+    "opportunitiesTitle": {
+      "type": "string",
+      "default": "Oportunidades Profesionales"
+    },
+    "opportunitiesDescription": {
+      "type": "string",
+      "default": "Carrera en empresas multinacionales y startups"
+    },
+    "opportunitiesIcon": {
+      "type": "string",
+      "default": "💼"
+    },
+    "statisticsTitle": {
+      "type": "string",
+      "default": "Dubai en números"
+    },
+    "statistics": {
+      "type": "json"
+    },
+    "featuresTitle": {
+      "type": "string",
+      "default": "Características de Dubai"
+    },
+    "features": {
+      "type": "json"
+    },
+    "travelTipsTitle": {
+      "type": "string",
+      "default": "Tips de viaje para Dubai"
+    },
+    "travelTips": {
+      "type": "json"
+    },
+    "programs": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "overview": {
+      "type": "json"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "accommodation": {
+      "type": "json"
+    },
+    "transportation": {
+      "type": "json"
+    },
+    "climate": {
+      "type": "json"
+    },
+    "culture": {
+      "type": "json"
+    },
+    "education": {
+      "type": "json"
+    },
+    "workOpportunities": {
+      "type": "json"
+    },
+    "visaInfo": {
+      "type": "json"
+    },
+    "costOfLiving": {
+      "type": "json"
+    },
+    "safety": {
+      "type": "json"
+    },
+    "attractions": {
+      "type": "json"
+    },
+    "events": {
+      "type": "json"
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "seoKeywords": {
+      "type": "json"
+    }
+  }
+}
