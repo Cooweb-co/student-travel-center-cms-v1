@@ -464,6 +464,95 @@ export interface ApiDestinationDestination extends Schema.CollectionType {
   };
 }
 
+export interface ApiProgramProgram extends Schema.CollectionType {
+  collectionName: 'programs';
+  info: {
+    singularName: 'program';
+    pluralName: 'programs';
+    displayName: 'Programa';
+    description: 'Programas de estudio y trabajo en el extranjero';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    slug: Attribute.UID<'api::program.program', 'title'> & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    shortDescription: Attribute.Text &
+      Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
+    programType: Attribute.Enumeration<
+      [
+        'work-and-travel',
+        'estudios-exterior',
+        'practicas-pasantias',
+        'au-pair',
+        'voluntariados'
+      ]
+    > &
+      Attribute.Required;
+    duration: Attribute.String & Attribute.Required;
+    price: Attribute.Decimal & Attribute.Required;
+    currency: Attribute.String & Attribute.DefaultTo<'USD'>;
+    featuredImage: Attribute.Media & Attribute.Required;
+    gallery: Attribute.Media;
+    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
+    active: Attribute.Boolean & Attribute.DefaultTo<true>;
+    destination: Attribute.Relation<
+      'api::program.program',
+      'manyToOne',
+      'api::destination.destination'
+    >;
+    ageRange: Attribute.JSON;
+    requirements: Attribute.JSON;
+    inclusions: Attribute.JSON;
+    exclusions: Attribute.JSON;
+    itinerary: Attribute.JSON;
+    accommodation: Attribute.JSON;
+    meals: Attribute.JSON;
+    transportation: Attribute.JSON;
+    activities: Attribute.JSON;
+    support: Attribute.JSON;
+    certification: Attribute.JSON;
+    languageRequirements: Attribute.JSON;
+    applicationProcess: Attribute.JSON;
+    deadlines: Attribute.JSON;
+    testimonials: Attribute.JSON;
+    faq: Attribute.JSON;
+    pricing: Attribute.JSON;
+    benefits: Attribute.JSON;
+    careerOpportunities: Attribute.JSON;
+    culturalExperience: Attribute.JSON;
+    safety: Attribute.JSON;
+    insurance: Attribute.JSON;
+    visaSupport: Attribute.JSON;
+    seoTitle: Attribute.String;
+    seoDescription: Attribute.Text;
+    seoKeywords: Attribute.JSON;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::program.program',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::program.program',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -901,6 +990,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::destination.destination': ApiDestinationDestination;
+      'api::program.program': ApiProgramProgram;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
