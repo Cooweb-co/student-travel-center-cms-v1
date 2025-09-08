@@ -379,18 +379,6 @@ export interface ApiDestinationDestination extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
-    slug: Attribute.UID<'api::destination.destination', 'title'> &
-      Attribute.Required;
-    country: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 100;
-      }>;
-    countryCode: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 3;
-      }>;
     description: Attribute.RichText & Attribute.Required;
     shortDescription: Attribute.Text &
       Attribute.SetMinMaxLength<{

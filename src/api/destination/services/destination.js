@@ -20,37 +20,7 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations;
   },
 
-  // Método para obtener información completa por país
-  async findCompleteInfoByCountry(country) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        country: country
-      },
-      populate: {
-        image: true,
-        gallery: true
-      }
-    });
 
-    return destinations;
-  },
-
-  // Método para obtener información completa por slug
-  async findCompleteInfoBySlug(slug) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        slug: slug
-      },
-      populate: {
-        image: true,
-        gallery: true
-      }
-    });
-
-    return destinations;
-  },
 
   // Método para obtener destinos destacados
   async findFeaturedDestinations() {
@@ -76,31 +46,11 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations.map(item => ({
       id: item.id,
       title: item.title,
-      country: item.country,
-      slug: item.slug,
       statistics: item.statistics,
       statisticsTitle: item.statisticsTitle
     }));
   },
 
-  // Método para obtener estadísticas por país
-  async findStatisticsByCountry(country) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        country: country
-      }
-    });
-
-    return destinations.map(item => ({
-      id: item.id,
-      title: item.title,
-      country: item.country,
-      slug: item.slug,
-      statistics: item.statistics,
-      statisticsTitle: item.statisticsTitle
-    }));
-  },
 
   // Método para obtener tips de viaje específicos
   async findTravelTips() {
@@ -111,31 +61,11 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations.map(item => ({
       id: item.id,
       title: item.title,
-      country: item.country,
-      slug: item.slug,
       travelTips: item.travelTips,
       travelTipsTitle: item.travelTipsTitle
     }));
   },
 
-  // Método para obtener tips de viaje por país
-  async findTravelTipsByCountry(country) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        country: country
-      }
-    });
-
-    return destinations.map(item => ({
-      id: item.id,
-      title: item.title,
-      country: item.country,
-      slug: item.slug,
-      travelTips: item.travelTips,
-      travelTipsTitle: item.travelTipsTitle
-    }));
-  },
 
   // Método para obtener características específicas
   async findFeatures() {
@@ -146,31 +76,11 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations.map(item => ({
       id: item.id,
       title: item.title,
-      country: item.country,
-      slug: item.slug,
       features: item.features,
       featuresTitle: item.featuresTitle
     }));
   },
 
-  // Método para obtener características por país
-  async findFeaturesByCountry(country) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        country: country
-      }
-    });
-
-    return destinations.map(item => ({
-      id: item.id,
-      title: item.title,
-      country: item.country,
-      slug: item.slug,
-      features: item.features,
-      featuresTitle: item.featuresTitle
-    }));
-  },
 
   // Método para obtener información de programas
   async findPrograms() {
@@ -181,49 +91,11 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations.map(item => ({
       id: item.id,
       title: item.title,
-      country: item.country,
-      slug: item.slug,
       programs: item.programs,
       requirements: item.requirements
     }));
   },
 
-  // Método para obtener programas por país
-  async findProgramsByCountry(country) {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { 
-        active: true,
-        country: country
-      }
-    });
-
-    return destinations.map(item => ({
-      id: item.id,
-      title: item.title,
-      country: item.country,
-      slug: item.slug,
-      programs: item.programs,
-      requirements: item.requirements
-    }));
-  },
-
-  // Método para obtener lista de países disponibles
-  async findAvailableCountries() {
-    const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { active: true },
-      fields: ['country', 'countryCode', 'title', 'slug']
-    });
-
-    // Retornar lista única de países
-    const countries = destinations.map(item => ({
-      country: item.country,
-      countryCode: item.countryCode,
-      title: item.title,
-      slug: item.slug
-    }));
-
-    return countries;
-  },
 
   // Método para buscar destinos por término
   async searchDestinations(searchTerm) {
@@ -232,7 +104,6 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
         active: true,
         $or: [
           { title: { $containsi: searchTerm } },
-          { country: { $containsi: searchTerm } },
           { shortDescription: { $containsi: searchTerm } }
         ]
       },
@@ -244,3 +115,4 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     return destinations;
   }
 }));
+ 
