@@ -17,21 +17,6 @@
       "required": true,
       "maxLength": 255
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
-    },
-    "country": {
-      "type": "string",
-      "required": true,
-      "maxLength": 100
-    },
-    "countryCode": {
-      "type": "string",
-      "required": true,
-      "maxLength": 3
-    },
     "description": {
       "type": "richtext",
       "required": true
