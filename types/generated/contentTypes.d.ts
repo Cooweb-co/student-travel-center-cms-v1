@@ -367,7 +367,7 @@ export interface ApiDestinationDestination extends Schema.CollectionType {
   info: {
     singularName: 'destination';
     pluralName: 'destinations';
-    displayName: 'Destination';
+    displayName: 'Destinations';
     description: 'Informaci\u00F3n detallada sobre destinos de estudio y trabajo';
   };
   options: {
@@ -469,7 +469,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
   info: {
     singularName: 'program';
     pluralName: 'programs';
-    displayName: 'Programa';
+    displayName: 'Programs';
     description: 'Programas de estudio y trabajo en el extranjero';
   };
   options: {
