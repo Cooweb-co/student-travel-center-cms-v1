@@ -54,5 +54,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: 'GET',
+      path: '/destinations/titles',
+      handler: 'destination.findTitles',
+      config: {
+        auth: false,
+      },
+    },
   ],
 };

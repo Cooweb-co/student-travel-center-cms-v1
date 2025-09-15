@@ -207,5 +207,18 @@ module.exports = createCoreController('api::program.program', ({ strapi }) => ({
     });
 
     return entities;
+  },
+
+  // Método personalizado para obtener solo los títulos de los programas
+  async findTitles(ctx) {
+    const entities = await strapi.entityService.findMany('api::program.program', {
+      filters: { active: true },
+      fields: ['id', 'title']
+    });
+
+    return entities.map(entity => ({
+      id: entity.id,
+      title: entity.title
+    }));
   }
 }));

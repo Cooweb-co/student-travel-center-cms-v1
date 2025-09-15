@@ -212,5 +212,18 @@ module.exports = createCoreService('api::program.program', ({ strapi }) => ({
       isValid: errors.length === 0,
       errors: errors
     };
+  },
+
+  // Método para obtener solo los títulos de los programas
+  async findTitles() {
+    const programs = await strapi.entityService.findMany('api::program.program', {
+      filters: { active: true },
+      fields: ['id', 'title']
+    });
+
+    return programs.map(program => ({
+      id: program.id,
+      title: program.title
+    }));
   }
 }));

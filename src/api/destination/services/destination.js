@@ -113,6 +113,19 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     });
 
     return destinations;
+  },
+
+  // Método para obtener solo los títulos de los destinos
+  async findTitles() {
+    const destinations = await strapi.entityService.findMany('api::destination.destination', {
+      filters: { active: true },
+      fields: ['id', 'title']
+    });
+
+    return destinations.map(destination => ({
+      id: destination.id,
+      title: destination.title
+    }));
   }
 }));
  

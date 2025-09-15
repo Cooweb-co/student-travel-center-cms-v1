@@ -70,5 +70,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: 'GET',
+      path: '/programs/titles',
+      handler: 'program.findTitles',
+      config: {
+        auth: false,
+      },
+    },
   ],
 };
