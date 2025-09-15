@@ -30,6 +30,22 @@
       "type": "text",
       "maxLength": 500
     },
+    "imageUrl": {
+      "type": "string",
+      "required": true
+    },
+    "destinations": {
+      "type": "json"
+    },
+    "duration": {
+      "type": "json"
+    },
+    "ageRequirement": {
+      "type": "json"
+    },
+    "englishLevel": {
+      "type": "string"
+    },
     "programType": {
       "type": "enumeration",
       "enum": [
@@ -39,10 +55,6 @@
         "au-pair",
         "voluntariados"
       ],
-      "required": true
-    },
-    "duration": {
-      "type": "string",
       "required": true
     },
     "price": {
@@ -81,6 +93,9 @@
       "type": "json"
     },
     "requirements": {
+      "type": "json"
+    },
+    "benefits": {
       "type": "json"
     },
     "inclusions": {
@@ -126,9 +141,6 @@
       "type": "json"
     },
     "pricing": {
-      "type": "json"
-    },
-    "benefits": {
       "type": "json"
     },
     "careerOpportunities": {
