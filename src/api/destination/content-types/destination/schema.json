@@ -22,6 +22,17 @@
       "targetField": "name",
       "required": true
     },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "northAmerica",
+        "europe",
+        "asia",
+        "oceania",
+        "africa"
+      ],
+      "required": true
+    },
     "image": {
       "type": "media",
       "multiple": false,
