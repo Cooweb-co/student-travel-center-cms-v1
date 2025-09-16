@@ -22,9 +22,11 @@
       "targetField": "name",
       "required": true
     },
-    "imageUrl": {
-      "type": "string",
-      "required": true
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
     },
     "description": {
       "type": "richtext",
@@ -64,7 +66,9 @@
       "type": "json"
     },
     "gallery": {
-      "type": "json"
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
     },
     "testimonials": {
       "type": "json"
