@@ -58,7 +58,8 @@
         "internship-thailand"
       ],
       "multiple": true,
-      "required": true
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
     },
     "featured": {
       "type": "boolean",
