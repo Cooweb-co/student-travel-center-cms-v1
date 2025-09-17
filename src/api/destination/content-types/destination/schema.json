@@ -43,23 +43,13 @@
       "type": "richtext",
       "required": true
     },
-    "programs": {
-      "type": "enumeration",
-      "enum": [
-        "work-and-travel-camp-usa",
-        "work-and-study",
-        "study-abroad",
-        "volunteer",
-        "internship",
-        "au-pair",
-        "internship-usa",
-        "internship-espana",
-        "internship-qatar",
-        "internship-thailand"
-      ],
-      "multiple": true,
-      "required": true,
-      "customField": "plugin::multi-select.multi-select"
+
+    "programTypes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program-type.program-type",
+      "mappedBy": "destinations"
+
     },
     "featured": {
       "type": "boolean",

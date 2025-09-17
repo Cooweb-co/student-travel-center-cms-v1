@@ -48,8 +48,8 @@ module.exports = {
     },
     {
       method: 'GET',
-      path: '/destinations/programs',
-      handler: 'destination.findPrograms',
+      path: '/destinations/program-types',
+      handler: 'destination.findProgramTypes',
       config: {
         auth: false,
       },
