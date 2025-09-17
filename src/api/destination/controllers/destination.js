@@ -13,7 +13,8 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       filters: { active: true },
       populate: {
         image: true,
-        gallery: true
+        gallery: true,
+        programTypes: true
       }
     });
 
@@ -94,20 +95,21 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
   },
 
 
-  // Método personalizado para obtener información de programas
-  async findPrograms(ctx) {
+  // Método personalizado para obtener información de tipos de programas
+  async findProgramTypes(ctx) {
     const entities = await strapi.entityService.findMany('api::destination.destination', {
       filters: { active: true },
       populate: {
-        image: true
+        image: true,
+        programTypes: true
       }
     });
 
-    // Retornar solo la información de programas
+    // Retornar solo la información de tipos de programas
     return entities.map(entity => ({
       id: entity.id,
-      title: entity.title,
-      programs: entity.programs,
+      name: entity.name,
+      programTypes: entity.programTypes,
       requirements: entity.requirements
     }));
   },
