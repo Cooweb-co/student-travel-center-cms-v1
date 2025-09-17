@@ -375,78 +375,44 @@ export interface ApiDestinationDestination extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String &
+    name: Attribute.String &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
-    description: Attribute.RichText & Attribute.Required;
-    shortDescription: Attribute.Text &
-      Attribute.SetMinMaxLength<{
-        maxLength: 500;
-      }>;
+    slug: Attribute.UID<'api::destination.destination', 'name'> &
+      Attribute.Required;
+    region: Attribute.Enumeration<
+      ['northAmerica', 'europe', 'asia', 'oceania', 'africa']
+    > &
+      Attribute.Required;
     image: Attribute.Media & Attribute.Required;
-    gallery: Attribute.Media;
+    description: Attribute.RichText & Attribute.Required;
+    programs: Attribute.Enumeration<
+      [
+        'work-and-travel-camp-usa',
+        'work-and-study',
+        'study-abroad',
+        'volunteer',
+        'internship',
+        'au-pair',
+        'internship-usa',
+        'internship-espana',
+        'internship-qatar',
+        'internship-thailand'
+      ]
+    > &
+      Attribute.Required &
+      Attribute.CustomField<'plugin::multi-select.multi-select'>;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    active: Attribute.Boolean & Attribute.DefaultTo<true>;
-    whyChooseTitle: Attribute.String &
-      Attribute.DefaultTo<'\u00BFPor qu\u00E9 elegir este destino?'>;
-    whyChooseItems: Attribute.JSON;
-    hospitalityTitle: Attribute.String & Attribute.DefaultTo<'Cultura Rica'>;
-    hospitalityDescription: Attribute.String &
-      Attribute.DefaultTo<'Pa\u00EDs con rica historia y tradiciones culturales'>;
-    hospitalityIcon: Attribute.String & Attribute.DefaultTo<'\uD83C\uDFAD'>;
-    educationTitle: Attribute.String &
-      Attribute.DefaultTo<'Educaci\u00F3n de Calidad'>;
-    educationDescription: Attribute.String &
-      Attribute.DefaultTo<'Universidades de prestigio con costos accesibles'>;
-    educationIcon: Attribute.String & Attribute.DefaultTo<'\uD83C\uDF93'>;
-    cultureTitle: Attribute.String & Attribute.DefaultTo<'Cultura Local'>;
-    cultureDescription: Attribute.String &
-      Attribute.DefaultTo<'Rica tradici\u00F3n cultural y costumbres locales'>;
-    cultureIcon: Attribute.String & Attribute.DefaultTo<'\uD83D\uDDE3\uFE0F'>;
-    languageTitle: Attribute.String & Attribute.DefaultTo<'Idioma'>;
-    languageDescription: Attribute.String &
-      Attribute.DefaultTo<'Idioma oficial del pa\u00EDs'>;
-    languageIcon: Attribute.String & Attribute.DefaultTo<'\u2600\uFE0F'>;
-    qualityTitle: Attribute.String & Attribute.DefaultTo<'Calidad de Vida'>;
-    qualityDescription: Attribute.String &
-      Attribute.DefaultTo<'Excelente calidad de vida y servicios p\u00FAblicos'>;
-    qualityIcon: Attribute.String & Attribute.DefaultTo<'\uD83C\uDFE0'>;
-    opportunitiesTitle: Attribute.String &
-      Attribute.DefaultTo<'Oportunidades Profesionales'>;
-    opportunitiesDescription: Attribute.String &
-      Attribute.DefaultTo<'Carrera en empresas internacionales y startups'>;
-    opportunitiesIcon: Attribute.String & Attribute.DefaultTo<'\uD83D\uDCBC'>;
-    statisticsTitle: Attribute.String &
-      Attribute.DefaultTo<'Estad\u00EDsticas del destino'>;
-    statistics: Attribute.JSON;
-    featuresTitle: Attribute.String &
-      Attribute.DefaultTo<'Caracter\u00EDsticas del destino'>;
-    features: Attribute.JSON;
-    travelTipsTitle: Attribute.String & Attribute.DefaultTo<'Tips de viaje'>;
-    travelTips: Attribute.JSON;
-    programs: Attribute.JSON;
-    requirements: Attribute.JSON;
     overview: Attribute.JSON;
-    highlights: Attribute.JSON;
-    pricing: Attribute.JSON;
-    accommodation: Attribute.JSON;
-    transportation: Attribute.JSON;
-    climate: Attribute.JSON;
-    culture: Attribute.JSON;
-    education: Attribute.JSON;
-    workOpportunities: Attribute.JSON;
-    visaInfo: Attribute.JSON;
-    costOfLiving: Attribute.JSON;
-    safety: Attribute.JSON;
-    attractions: Attribute.JSON;
-    events: Attribute.JSON;
+    statistics: Attribute.JSON;
+    travelTips: Attribute.JSON;
+    requirements: Attribute.JSON;
+    gallery: Attribute.Media;
     testimonials: Attribute.JSON;
-    faq: Attribute.JSON;
-    seoTitle: Attribute.String;
-    seoDescription: Attribute.Text;
-    seoKeywords: Attribute.JSON;
+    pricing: Attribute.JSON;
+    registrationSteps: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -488,6 +454,11 @@ export interface ApiProgramProgram extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 500;
       }>;
+    imageUrl: Attribute.String & Attribute.Required;
+    destinations: Attribute.JSON;
+    duration: Attribute.JSON;
+    ageRequirement: Attribute.JSON;
+    englishLevel: Attribute.String;
     programType: Attribute.Enumeration<
       [
         'work-and-travel',
@@ -498,7 +469,6 @@ export interface ApiProgramProgram extends Schema.CollectionType {
       ]
     > &
       Attribute.Required;
-    duration: Attribute.String & Attribute.Required;
     price: Attribute.Decimal & Attribute.Required;
     currency: Attribute.String & Attribute.DefaultTo<'USD'>;
     featuredImage: Attribute.Media & Attribute.Required;
@@ -512,6 +482,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     >;
     ageRange: Attribute.JSON;
     requirements: Attribute.JSON;
+    benefits: Attribute.JSON;
     inclusions: Attribute.JSON;
     exclusions: Attribute.JSON;
     itinerary: Attribute.JSON;
@@ -527,7 +498,6 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     testimonials: Attribute.JSON;
     faq: Attribute.JSON;
     pricing: Attribute.JSON;
-    benefits: Attribute.JSON;
     careerOpportunities: Attribute.JSON;
     culturalExperience: Attribute.JSON;
     safety: Attribute.JSON;

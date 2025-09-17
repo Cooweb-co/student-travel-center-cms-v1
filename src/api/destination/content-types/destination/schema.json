@@ -43,11 +43,13 @@
       "type": "richtext",
       "required": true
     },
+
     "programTypes": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::program-type.program-type",
       "mappedBy": "destinations"
+
     },
     "featured": {
       "type": "boolean",
