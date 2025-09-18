@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "singularName": "destination",
+    "pluralName": "destinations",
+    "displayName": "Destinations",
+    "description": "Información detallada sobre destinos de estudio y trabajo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "northAmerica",
+        "europe",
+        "asia",
+        "oceania",
+        "africa"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+
+    "programTypes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program-type.program-type",
+      "mappedBy": "destinations"
+
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "overview": {
+      "type": "json"
+    },
+    "statistics": {
+      "type": "json"
+    },
+    "travelTips": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "registrationSteps": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Programs",
+    "description": "Programas de estudio y trabajo en el extranjero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true
+    },
+    "destinations": {
+      "type": "json"
+    },
+    "duration": {
+      "type": "json"
+    },
+    "ageRequirement": {
+      "type": "json"
+    },
+    "englishLevel": {
+      "type": "string"
+    },
+    "programType": {
+      "type": "enumeration",
+      "enum": [
+        "work-and-travel",
+        "estudios-exterior",
+        "practicas-pasantias",
+        "au-pair",
+        "voluntariados"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::destination.destination"
+    },
+    "ageRange": {
+      "type": "json"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "benefits": {
+      "type": "json"
+    },
+    "inclusions": {
+      "type": "json"
+    },
+    "exclusions": {
+      "type": "json"
+    },
+    "itinerary": {
+      "type": "json"
+    },
+    "accommodation": {
+      "type": "json"
+    },
+    "meals": {
+      "type": "json"
+    },
+    "transportation": {
+      "type": "json"
+    },
+    "activities": {
+      "type": "json"
+    },
+    "support": {
+      "type": "json"
+    },
+    "certification": {
+      "type": "json"
+    },
+    "languageRequirements": {
+      "type": "json"
+    },
+    "applicationProcess": {
+      "type": "json"
+    },
+    "deadlines": {
+      "type": "json"
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "careerOpportunities": {
+      "type": "json"
+    },
+    "culturalExperience": {
+      "type": "json"
+    },
+    "safety": {
+      "type": "json"
+    },
+    "insurance": {
+      "type": "json"
+    },
+    "visaSupport": {
+      "type": "json"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "seoKeywords": {
+      "type": "json"
+    }
+  }
+}
