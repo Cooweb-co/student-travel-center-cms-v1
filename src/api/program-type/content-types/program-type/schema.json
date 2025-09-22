@@ -36,7 +36,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::destination.destination",
-      "inversedBy": "programTypes"
+      "mappedBy": "programTypes"
     }
   }
 }
