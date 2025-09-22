@@ -48,8 +48,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::program-type.program-type",
-      "mappedBy": "destinations"
-
+      "inversedBy": "destinations"
     },
     "featured": {
       "type": "boolean",
