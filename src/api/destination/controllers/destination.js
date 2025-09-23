@@ -7,6 +7,22 @@
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::destination.destination', ({ strapi }) => ({
+  // Sobrescribir find para incluir campos por defecto
+  async find(ctx) {
+    // Usar entityService directamente para mayor control
+    const entities = await strapi.entityService.findMany('api::destination.destination', {
+      ...ctx.query,
+      populate: {
+        image: true,
+        gallery: true,
+        programTypes: true,
+        ...ctx.query.populate
+      }
+    });
+    
+    return { data: entities, meta: {} };
+  },
+
   // Método personalizado para obtener información completa de un destino
   async findComplete(ctx) {
     const entities = await strapi.entityService.findMany('api::destination.destination', {
