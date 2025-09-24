@@ -143,4 +143,18 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
     }));
   },
 
+  // Método personalizado para obtener datos del menú (id, name, slug)
+  async findMenu(ctx) {
+    const entities = await strapi.entityService.findMany('api::destination.destination', {
+      filters: { active: true },
+      fields: ['id', 'name', 'slug']
+    });
+
+    return entities.map(entity => ({
+      id: entity.id,
+      name: entity.name,
+      slug: entity.slug
+    }));
+  },
+
 }));

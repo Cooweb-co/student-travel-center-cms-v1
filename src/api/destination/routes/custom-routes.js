@@ -62,5 +62,13 @@ module.exports = {
         auth: false,
       },
     },
+    {
+      method: 'GET',
+      path: '/destinations/menu',
+      handler: 'destination.findMenu',
+      config: {
+        auth: false,
+      },
+    },
   ],
 };
