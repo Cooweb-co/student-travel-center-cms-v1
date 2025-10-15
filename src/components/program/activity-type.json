@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_program_activity_types",
+  "info": {
+    "displayName": "Activity Type",
+    "description": "Tipo de actividad dentro del programa"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
+

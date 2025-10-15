@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_program_testimonials",
+  "info": {
+    "displayName": "Testimonial",
+    "description": "Testimonio de participante del programa"
+  },
+  "attributes": {
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -30,17 +30,34 @@
       "type": "text",
       "maxLength": 500
     },
-    "imageUrl": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "location": {
       "type": "string",
       "required": true
     },
-    "destinations": {
+    "mostrarDestinos": {
+      "type": "boolean",
+      "default": false
+    },
+    "destinationsToShow": {
       "type": "json"
     },
     "duration": {
-      "type": "json"
+      "type": "string",
+      "required": true
+    },
+    "startDates": {
+      "type": "string"
     },
     "ageRequirement": {
+      "type": "json"
+    },
+    "ageRange": {
       "type": "json"
     },
     "englishLevel": {
@@ -65,17 +82,6 @@
       "type": "string",
       "default": "USD"
     },
-    "featuredImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": ["images"]
-    },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": ["images"]
-    },
     "featured": {
       "type": "boolean",
       "default": false
@@ -89,35 +95,30 @@
       "relation": "manyToOne",
       "target": "api::destination.destination"
     },
-    "ageRange": {
+    "features": {
       "type": "json"
     },
     "requirements": {
+      "type": "json",
+      "required": true
+    },
+    "simple_requirements": {
       "type": "json"
     },
-    "benefits": {
-      "type": "json"
+    "beneficios": {
+      "type": "json",
+      "required": true
     },
     "inclusions": {
       "type": "json"
     },
-    "exclusions": {
+    "noincluye": {
       "type": "json"
     },
-    "itinerary": {
-      "type": "json"
-    },
-    "accommodation": {
-      "type": "json"
-    },
-    "meals": {
-      "type": "json"
-    },
-    "transportation": {
-      "type": "json"
-    },
-    "activities": {
-      "type": "json"
+    "tipos_actividades": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program.activity-type"
     },
     "support": {
       "type": "json"
@@ -128,14 +129,10 @@
     "languageRequirements": {
       "type": "json"
     },
-    "applicationProcess": {
-      "type": "json"
-    },
-    "deadlines": {
-      "type": "json"
-    },
     "testimonials": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "program.testimonial"
     },
     "faq": {
       "type": "json"
@@ -143,19 +140,47 @@
     "pricing": {
       "type": "json"
     },
-    "careerOpportunities": {
+    "oportunidades_laborales": {
       "type": "json"
     },
-    "culturalExperience": {
+    "visa": {
+      "type": "json",
+      "required": true
+    },
+    "why_program": {
       "type": "json"
     },
-    "safety": {
+    "why_stc": {
+      "type": "json",
+      "required": true
+    },
+    "carreras_afines": {
       "type": "json"
     },
-    "insurance": {
+    "vacantes_disponibles": {
       "type": "json"
     },
-    "visaSupport": {
+    "tipos_programas": {
+      "type": "json"
+    },
+    "dato_curioso": {
+      "type": "text"
+    },
+    "como_ayuda_agencia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "program.agency-help",
+      "required": true
+    },
+    "planificacion": {
+      "type": "json",
+      "required": true
+    },
+    "solvencia_economica": {
+      "type": "text",
+      "required": true
+    },
+    "casos_exito": {
       "type": "json"
     },
     "seoTitle": {

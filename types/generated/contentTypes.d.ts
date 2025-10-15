@@ -362,170 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-<<<<<<< Updated upstream
-export interface ApiDestinationDestination extends Schema.CollectionType {
-  collectionName: 'destinations';
-  info: {
-    singularName: 'destination';
-    pluralName: 'destinations';
-    displayName: 'Destinations';
-    description: 'Informaci\u00F3n detallada sobre destinos de estudio y trabajo';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 255;
-      }>;
-    slug: Attribute.UID<'api::destination.destination', 'name'> &
-      Attribute.Required;
-    region: Attribute.Enumeration<
-      ['northAmerica', 'europe', 'asia', 'oceania', 'africa']
-    > &
-      Attribute.Required;
-    image: Attribute.Media & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
-    programs: Attribute.Enumeration<
-      [
-        'work-and-travel-camp-usa',
-        'work-and-study',
-        'study-abroad',
-        'volunteer',
-        'internship',
-        'au-pair',
-        'internship-usa',
-        'internship-espana',
-        'internship-qatar',
-        'internship-thailand'
-      ]
-    > &
-      Attribute.Required &
-      Attribute.CustomField<'plugin::multi-select.multi-select'>;
-    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    overview: Attribute.JSON;
-    statistics: Attribute.JSON;
-    travelTips: Attribute.JSON;
-    requirements: Attribute.JSON;
-    gallery: Attribute.Media;
-    testimonials: Attribute.JSON;
-    pricing: Attribute.JSON;
-    registrationSteps: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::destination.destination',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::destination.destination',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProgramProgram extends Schema.CollectionType {
-  collectionName: 'programs';
-  info: {
-    singularName: 'program';
-    pluralName: 'programs';
-    displayName: 'Programs';
-    description: 'Programas de estudio y trabajo en el extranjero';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 255;
-      }>;
-    slug: Attribute.UID<'api::program.program', 'title'> & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
-    shortDescription: Attribute.Text &
-      Attribute.SetMinMaxLength<{
-        maxLength: 500;
-      }>;
-    imageUrl: Attribute.String & Attribute.Required;
-    destinations: Attribute.JSON;
-    duration: Attribute.JSON;
-    ageRequirement: Attribute.JSON;
-    englishLevel: Attribute.String;
-    programType: Attribute.Enumeration<
-      [
-        'work-and-travel',
-        'estudios-exterior',
-        'practicas-pasantias',
-        'au-pair',
-        'voluntariados'
-      ]
-    > &
-      Attribute.Required;
-    price: Attribute.Decimal & Attribute.Required;
-    currency: Attribute.String & Attribute.DefaultTo<'USD'>;
-    featuredImage: Attribute.Media & Attribute.Required;
-    gallery: Attribute.Media;
-    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    active: Attribute.Boolean & Attribute.DefaultTo<true>;
-    destination: Attribute.Relation<
-      'api::program.program',
-      'manyToOne',
-      'api::destination.destination'
-    >;
-    ageRange: Attribute.JSON;
-    requirements: Attribute.JSON;
-    benefits: Attribute.JSON;
-    inclusions: Attribute.JSON;
-    exclusions: Attribute.JSON;
-    itinerary: Attribute.JSON;
-    accommodation: Attribute.JSON;
-    meals: Attribute.JSON;
-    transportation: Attribute.JSON;
-    activities: Attribute.JSON;
-    support: Attribute.JSON;
-    certification: Attribute.JSON;
-    languageRequirements: Attribute.JSON;
-    applicationProcess: Attribute.JSON;
-    deadlines: Attribute.JSON;
-    testimonials: Attribute.JSON;
-    faq: Attribute.JSON;
-    pricing: Attribute.JSON;
-    careerOpportunities: Attribute.JSON;
-    culturalExperience: Attribute.JSON;
-    safety: Attribute.JSON;
-    insurance: Attribute.JSON;
-    visaSupport: Attribute.JSON;
-    seoTitle: Attribute.String;
-    seoDescription: Attribute.Text;
-    seoKeywords: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::program.program',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::program.program',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-=======
->>>>>>> Stashed changes
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -1032,10 +868,14 @@ export interface ApiProgramProgram extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 500;
       }>;
-    imageUrl: Attribute.String & Attribute.Required;
-    destinations: Attribute.JSON;
-    duration: Attribute.JSON;
+    image: Attribute.Media & Attribute.Required;
+    location: Attribute.String & Attribute.Required;
+    mostrarDestinos: Attribute.Boolean & Attribute.DefaultTo<false>;
+    destinationsToShow: Attribute.JSON;
+    duration: Attribute.String & Attribute.Required;
+    startDates: Attribute.String;
     ageRequirement: Attribute.JSON;
+    ageRange: Attribute.JSON;
     englishLevel: Attribute.String;
     programType: Attribute.Enumeration<
       [
@@ -1049,8 +889,6 @@ export interface ApiProgramProgram extends Schema.CollectionType {
       Attribute.Required;
     price: Attribute.Decimal & Attribute.Required;
     currency: Attribute.String & Attribute.DefaultTo<'USD'>;
-    featuredImage: Attribute.Media & Attribute.Required;
-    gallery: Attribute.Media;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
     active: Attribute.Boolean & Attribute.DefaultTo<true>;
     destination: Attribute.Relation<
@@ -1058,29 +896,32 @@ export interface ApiProgramProgram extends Schema.CollectionType {
       'manyToOne',
       'api::destination.destination'
     >;
-    ageRange: Attribute.JSON;
-    requirements: Attribute.JSON;
-    benefits: Attribute.JSON;
+    features: Attribute.JSON;
+    requirements: Attribute.JSON & Attribute.Required;
+    simple_requirements: Attribute.JSON;
+    beneficios: Attribute.JSON & Attribute.Required;
     inclusions: Attribute.JSON;
-    exclusions: Attribute.JSON;
-    itinerary: Attribute.JSON;
-    accommodation: Attribute.JSON;
-    meals: Attribute.JSON;
-    transportation: Attribute.JSON;
-    activities: Attribute.JSON;
+    noincluye: Attribute.JSON;
+    tipos_actividades: Attribute.Component<'program.activity-type', true>;
     support: Attribute.JSON;
     certification: Attribute.JSON;
     languageRequirements: Attribute.JSON;
-    applicationProcess: Attribute.JSON;
-    deadlines: Attribute.JSON;
-    testimonials: Attribute.JSON;
+    testimonials: Attribute.Component<'program.testimonial', true>;
     faq: Attribute.JSON;
     pricing: Attribute.JSON;
-    careerOpportunities: Attribute.JSON;
-    culturalExperience: Attribute.JSON;
-    safety: Attribute.JSON;
-    insurance: Attribute.JSON;
-    visaSupport: Attribute.JSON;
+    oportunidades_laborales: Attribute.JSON;
+    visa: Attribute.JSON & Attribute.Required;
+    why_program: Attribute.JSON;
+    why_stc: Attribute.JSON & Attribute.Required;
+    carreras_afines: Attribute.JSON;
+    vacantes_disponibles: Attribute.JSON;
+    tipos_programas: Attribute.JSON;
+    dato_curioso: Attribute.Text;
+    como_ayuda_agencia: Attribute.Component<'program.agency-help', true> &
+      Attribute.Required;
+    planificacion: Attribute.JSON & Attribute.Required;
+    solvencia_economica: Attribute.Text & Attribute.Required;
+    casos_exito: Attribute.JSON;
     seoTitle: Attribute.String;
     seoDescription: Attribute.Text;
     seoKeywords: Attribute.JSON;

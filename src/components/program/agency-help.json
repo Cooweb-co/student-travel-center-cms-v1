@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_program_agency_helps",
+  "info": {
+    "displayName": "Cómo ayuda la agencia",
+    "description": "Servicios que ofrece la agencia al participante"
+  },
+  "attributes": {
+    "consultoria": {
+      "type": "text"
+    },
+    "matricula": {
+      "type": "text"
+    },
+    "pago": {
+      "type": "text"
+    },
+    "asesoramiento_visa": {
+      "type": "text"
+    },
+    "alojamiento_salud_seguro_tiquetes": {
+      "type": "text"
+    },
+    "reunion_pre_embarque": {
+      "type": "text"
+    },
+    "bienvenida_destino": {
+      "type": "text"
+    },
+    "apoyo_destino": {
+      "type": "text"
+    },
+    "migracion_renovacion": {
+      "type": "text"
+    }
+  }
+}
