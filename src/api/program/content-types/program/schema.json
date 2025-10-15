@@ -92,7 +92,7 @@
     },
     "destination": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::destination.destination"
     },
     "features": {

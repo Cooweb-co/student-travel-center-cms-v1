@@ -893,7 +893,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     active: Attribute.Boolean & Attribute.DefaultTo<true>;
     destination: Attribute.Relation<
       'api::program.program',
-      'manyToOne',
+      'oneToMany',
       'api::destination.destination'
     >;
     features: Attribute.JSON;
@@ -917,7 +917,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     vacantes_disponibles: Attribute.JSON;
     tipos_programas: Attribute.JSON;
     dato_curioso: Attribute.Text;
-    como_ayuda_agencia: Attribute.Component<'program.agency-help', true> &
+    como_ayuda_agencia: Attribute.Component<'program.agency-help'> &
       Attribute.Required;
     planificacion: Attribute.JSON & Attribute.Required;
     solvencia_economica: Attribute.Text & Attribute.Required;
