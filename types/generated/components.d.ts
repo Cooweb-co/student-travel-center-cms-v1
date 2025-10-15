@@ -13,6 +13,18 @@ export interface ProgramActivityType extends Schema.Component {
   };
 }
 
+export interface ProgramAgeRequirement extends Schema.Component {
+  collectionName: 'components_program_age_requirements';
+  info: {
+    displayName: 'Age Requirement';
+    description: 'Requisitos de edad para el programa';
+  };
+  attributes: {
+    min: Attribute.Integer & Attribute.Required;
+    max: Attribute.Integer & Attribute.Required;
+  };
+}
+
 export interface ProgramAgencyHelp extends Schema.Component {
   collectionName: 'components_program_agency_helps';
   info: {
@@ -59,6 +71,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'program.activity-type': ProgramActivityType;
+      'program.age-requirement': ProgramAgeRequirement;
       'program.agency-help': ProgramAgencyHelp;
       'program.testimonial': ProgramTestimonial;
     }

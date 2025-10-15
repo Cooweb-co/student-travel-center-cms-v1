@@ -874,7 +874,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     destinationsToShow: Attribute.JSON;
     duration: Attribute.String & Attribute.Required;
     startDates: Attribute.String;
-    ageRequirement: Attribute.JSON;
+    ageRequirement: Attribute.Component<'program.age-requirement'>;
     ageRange: Attribute.JSON;
     englishLevel: Attribute.String;
     programType: Attribute.Enumeration<

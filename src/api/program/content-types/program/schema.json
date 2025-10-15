@@ -55,7 +55,9 @@
       "type": "string"
     },
     "ageRequirement": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program.age-requirement"
     },
     "ageRange": {
       "type": "json"

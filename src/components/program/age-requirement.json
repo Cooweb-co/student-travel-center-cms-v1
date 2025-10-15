@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_program_age_requirements",
+  "info": {
+    "displayName": "Age Requirement",
+    "description": "Requisitos de edad para el programa"
+  },
+  "attributes": {
+    "min": {
+      "type": "integer",
+      "required": true
+    },
+    "max": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
