@@ -872,7 +872,7 @@ export interface ApiProgramProgram extends Schema.CollectionType {
     location: Attribute.String & Attribute.Required;
     mostrarDestinos: Attribute.Boolean & Attribute.DefaultTo<false>;
     destinationsToShow: Attribute.JSON;
-    duration: Attribute.String & Attribute.Required;
+    duration: Attribute.Component<'program.duration'> & Attribute.Required;
     startDates: Attribute.String;
     ageRequirement: Attribute.Component<'program.age-requirement'>;
     ageRange: Attribute.JSON;

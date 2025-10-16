@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_program_durations",
+  "info": {
+    "displayName": "Duration",
+    "description": "Duración del programa"
+  },
+  "attributes": {
+    "min": {
+      "type": "integer",
+      "required": true
+    },
+    "max": {
+      "type": "integer",
+      "required": true
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": ["weeks", "months", "years"],
+      "required": true
+    }
+  }
+}

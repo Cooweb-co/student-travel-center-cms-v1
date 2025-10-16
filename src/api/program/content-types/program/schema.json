@@ -48,7 +48,9 @@
       "type": "json"
     },
     "duration": {
-      "type": "string",
+      "type": "component",
+      "repeatable": false,
+      "component": "program.duration",
       "required": true
     },
     "startDates": {

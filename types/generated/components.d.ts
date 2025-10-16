@@ -44,6 +44,20 @@ export interface ProgramAgencyHelp extends Schema.Component {
   };
 }
 
+export interface ProgramDuration extends Schema.Component {
+  collectionName: 'components_program_durations';
+  info: {
+    displayName: 'Duration';
+    description: 'Duraci\u00F3n del programa';
+  };
+  attributes: {
+    min: Attribute.Integer & Attribute.Required;
+    max: Attribute.Integer & Attribute.Required;
+    unit: Attribute.Enumeration<['weeks', 'months', 'years']> &
+      Attribute.Required;
+  };
+}
+
 export interface ProgramTestimonial extends Schema.Component {
   collectionName: 'components_program_testimonials';
   info: {
@@ -73,6 +87,7 @@ declare module '@strapi/types' {
       'program.activity-type': ProgramActivityType;
       'program.age-requirement': ProgramAgeRequirement;
       'program.agency-help': ProgramAgencyHelp;
+      'program.duration': ProgramDuration;
       'program.testimonial': ProgramTestimonial;
     }
   }
