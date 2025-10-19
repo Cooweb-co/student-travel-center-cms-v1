@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_program_pricings",
+  "info": {
+    "displayName": "Pricing",
+    "description": "Información de precios del programa"
+  },
+  "attributes": {
+    "startingFrom": {
+      "type": "decimal",
+      "required": true
+    },
+    "currency": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

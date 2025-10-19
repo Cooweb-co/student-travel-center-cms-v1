@@ -78,14 +78,6 @@
       ],
       "required": true
     },
-    "price": {
-      "type": "decimal",
-      "required": true
-    },
-    "currency": {
-      "type": "string",
-      "default": "USD"
-    },
     "featured": {
       "type": "boolean",
       "default": false
@@ -142,7 +134,10 @@
       "type": "json"
     },
     "pricing": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program.pricing",
+      "required": true
     },
     "oportunidades_laborales": {
       "type": "json"
