@@ -4,26 +4,30 @@
   "info": {
     "singularName": "blog-category",
     "pluralName": "blog-categories",
-    "displayName": "Blog Categories"
+    "displayName": "Blog Category",
+    "description": "Categorías para las publicaciones del blog"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "code": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "label": {
-      "type": "string",
-      "required": true
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "text"
     },
     "icon": {
       "type": "string"
     },
-    "posts": {
+    "blogPosts": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::blog-post.blog-post",
