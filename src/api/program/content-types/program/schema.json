@@ -47,15 +47,10 @@
       "type": "string"
     },
     "programType": {
-      "type": "enumeration",
-      "enum": [
-        "work-and-travel",
-        "estudios-exterior",
-        "practicas-pasantias",
-        "au-pair",
-        "voluntariados"
-      ],
-      "required": true
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program-type.program-type",
+      "inversedBy": "programs"
     },
     "price": {
       "type": "decimal",

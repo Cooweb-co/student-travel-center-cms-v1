@@ -31,6 +31,12 @@
     "active": {
       "type": "boolean",
       "default": true
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program",
+      "mappedBy": "programType"
     }
   }
 }
