@@ -156,15 +156,6 @@
     },
     "visaSupport": {
       "type": "json"
-    },
-    "seoTitle": {
-      "type": "string"
-    },
-    "seoDescription": {
-      "type": "text"
-    },
-    "seoKeywords": {
-      "type": "json"
     }
   }
 }
