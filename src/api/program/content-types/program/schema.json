@@ -40,7 +40,9 @@
       "type": "json"
     },
     "duration": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "duration.duration"
     },
     "ageRequirement": {
       "type": "json"
