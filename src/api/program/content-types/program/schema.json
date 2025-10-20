@@ -31,8 +31,10 @@
       "maxLength": 500
     },
     "imageUrl": {
-      "type": "string",
-      "required": true
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
     },
     "destinations": {
       "type": "json"
