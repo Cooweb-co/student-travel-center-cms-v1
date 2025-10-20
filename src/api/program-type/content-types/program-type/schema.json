@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "maxLength": 100
     },
     "slug": {
       "type": "uid",
-      "targetField": "name",
+      "targetField": "title",
       "required": true
     },
     "description": {
@@ -31,12 +31,6 @@
     "active": {
       "type": "boolean",
       "default": true
-    },
-    "destinations": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::destination.destination",
-      "mappedBy": "programTypes"
     }
   }
 }
