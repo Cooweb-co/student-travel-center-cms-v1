@@ -793,22 +793,25 @@ export interface ApiBlogCategoryBlogCategory extends Schema.CollectionType {
   info: {
     singularName: 'blog-category';
     pluralName: 'blog-categories';
-    displayName: 'Blog Categories';
+    displayName: 'Blog Category';
+    description: 'Categor\u00EDas para las publicaciones del blog';
   };
   options: {
-    draftAndPublish: false;
+    draftAndPublish: true;
   };
   attributes: {
-    code: Attribute.String & Attribute.Required & Attribute.Unique;
-    label: Attribute.String & Attribute.Required;
+    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    slug: Attribute.UID<'api::blog-category.blog-category', 'name'>;
+    description: Attribute.Text;
     icon: Attribute.String;
-    posts: Attribute.Relation<
+    blogPosts: Attribute.Relation<
       'api::blog-category.blog-category',
       'oneToMany',
       'api::blog-post.blog-post'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::blog-category.blog-category',
       'oneToOne',
@@ -829,28 +832,35 @@ export interface ApiBlogPostBlogPost extends Schema.CollectionType {
   info: {
     singularName: 'blog-post';
     pluralName: 'blog-posts';
-    displayName: 'Blog Posts';
+    displayName: 'Blog Post';
+    description: 'Publicaciones del blog';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    externalId: Attribute.String & Attribute.Unique;
     title: Attribute.String & Attribute.Required;
-    excerpt: Attribute.Text;
-    content: Attribute.RichText;
-    featuredImage: Attribute.Media;
-    author: Attribute.Component<'blog.author'>;
+    slug: Attribute.UID<'api::blog-post.blog-post', 'title'>;
+    excerpt: Attribute.Text & Attribute.Required;
+    content: Attribute.RichText & Attribute.Required;
+    featuredImage: Attribute.Media & Attribute.Required;
+    author: Attribute.Component<'shared.author'>;
     category: Attribute.Relation<
       'api::blog-post.blog-post',
       'manyToOne',
       'api::blog-category.blog-category'
     >;
     tags: Attribute.JSON;
-    readTime: Attribute.Integer;
+    publishedAt: Attribute.DateTime;
+    readTime: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::blog-post.blog-post',
       'oneToOne',
