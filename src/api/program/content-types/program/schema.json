@@ -75,6 +75,10 @@
     },
     "solvencia_economica": {
       "type": "json"
+    },
+    "Campos especificos de programas": {
+      "type": "dynamiczone",
+      "components": ["faq.faq"]
     }
   }
 }
