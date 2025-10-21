@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_requirements",
+  "info": {
+    "displayName": "Requirement",
+    "description": "Program requirement component"
+  },
+  "options": {},
+  "attributes": {
+    "requirement": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

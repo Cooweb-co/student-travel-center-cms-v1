@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_durations",
+  "info": {
+    "displayName": "Duration",
+    "description": "Duration component with min, max values and unit"
+  },
+  "options": {},
+  "attributes": {
+    "min": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "max": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": ["weeks", "months", "years"],
+      "required": true,
+      "default": "weeks"
+    }
+  }
+}

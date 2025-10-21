@@ -12,31 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "maxLength": 100
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
     "description": {
       "type": "text"
     },
-    "icon": {
-      "type": "string"
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "requirement.requirement"
     },
     "active": {
       "type": "boolean",
       "default": true
     },
-    "destinations": {
+    "programs": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::destination.destination",
-      "mappedBy": "programTypes"
+      "relation": "oneToMany",
+      "target": "api::program.program",
+      "mappedBy": "programType"
     }
   }
 }
