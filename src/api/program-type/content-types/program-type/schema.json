@@ -29,6 +29,9 @@
       "type": "boolean",
       "default": true
     },
+    "order": {
+      "type": "integer"
+    },
     "programs": {
       "type": "relation",
       "relation": "oneToMany",
