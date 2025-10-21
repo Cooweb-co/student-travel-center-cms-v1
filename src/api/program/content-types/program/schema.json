@@ -12,160 +12,73 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 255
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
     },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
     "description": {
       "type": "richtext",
       "required": true
     },
-    "shortDescription": {
-      "type": "text",
-      "maxLength": 500
-    },
-    "imageUrl": {
-      "type": "string",
-      "required": true
-    },
-    "destinations": {
-      "type": "json"
-    },
-    "duration": {
-      "type": "json"
-    },
-    "ageRequirement": {
-      "type": "json"
-    },
-    "englishLevel": {
-      "type": "string"
-    },
-    "programType": {
-      "type": "enumeration",
-      "enum": [
-        "work-and-travel",
-        "estudios-exterior",
-        "practicas-pasantias",
-        "au-pair",
-        "voluntariados"
-      ],
-      "required": true
-    },
-    "price": {
-      "type": "decimal",
-      "required": true
-    },
-    "currency": {
-      "type": "string",
-      "default": "USD"
-    },
-    "featuredImage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": ["images"]
     },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": ["images"]
+    "programType": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program-type.program-type",
+      "inversedBy": "programs"
     },
-    "featured": {
-      "type": "boolean",
-      "default": false
-    },
-    "active": {
-      "type": "boolean",
-      "default": true
-    },
-    "destination": {
+    "location": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::destination.destination"
     },
-    "ageRange": {
+    "duration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "duration.duration"
+    },
+    "startDates": {
+      "type": "json"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "features": {
       "type": "json"
     },
     "requirements": {
       "type": "json"
     },
-    "benefits": {
+    "como_ayuda_agencia": {
       "type": "json"
     },
-    "inclusions": {
+    "beneficios": {
       "type": "json"
     },
-    "exclusions": {
+    "visa": {
       "type": "json"
     },
-    "itinerary": {
+    "planificacion": {
       "type": "json"
     },
-    "accommodation": {
+    "solvencia_economica": {
       "type": "json"
     },
-    "meals": {
-      "type": "json"
-    },
-    "transportation": {
-      "type": "json"
-    },
-    "activities": {
-      "type": "json"
-    },
-    "support": {
-      "type": "json"
-    },
-    "certification": {
-      "type": "json"
-    },
-    "languageRequirements": {
-      "type": "json"
-    },
-    "applicationProcess": {
-      "type": "json"
-    },
-    "deadlines": {
-      "type": "json"
-    },
-    "testimonials": {
-      "type": "json"
-    },
-    "faq": {
-      "type": "json"
-    },
-    "pricing": {
-      "type": "json"
-    },
-    "careerOpportunities": {
-      "type": "json"
-    },
-    "culturalExperience": {
-      "type": "json"
-    },
-    "safety": {
-      "type": "json"
-    },
-    "insurance": {
-      "type": "json"
-    },
-    "visaSupport": {
-      "type": "json"
-    },
-    "seoTitle": {
-      "type": "string"
-    },
-    "seoDescription": {
-      "type": "text"
-    },
-    "seoKeywords": {
-      "type": "json"
+    "Campos especificos de programas": {
+      "type": "dynamiczone",
+      "components": ["faq.faq"]
     }
   }
 }

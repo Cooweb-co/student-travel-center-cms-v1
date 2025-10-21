@@ -362,170 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-<<<<<<< Updated upstream
-export interface ApiDestinationDestination extends Schema.CollectionType {
-  collectionName: 'destinations';
-  info: {
-    singularName: 'destination';
-    pluralName: 'destinations';
-    displayName: 'Destinations';
-    description: 'Informaci\u00F3n detallada sobre destinos de estudio y trabajo';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 255;
-      }>;
-    slug: Attribute.UID<'api::destination.destination', 'name'> &
-      Attribute.Required;
-    region: Attribute.Enumeration<
-      ['northAmerica', 'europe', 'asia', 'oceania', 'africa']
-    > &
-      Attribute.Required;
-    image: Attribute.Media & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
-    programs: Attribute.Enumeration<
-      [
-        'work-and-travel-camp-usa',
-        'work-and-study',
-        'study-abroad',
-        'volunteer',
-        'internship',
-        'au-pair',
-        'internship-usa',
-        'internship-espana',
-        'internship-qatar',
-        'internship-thailand'
-      ]
-    > &
-      Attribute.Required &
-      Attribute.CustomField<'plugin::multi-select.multi-select'>;
-    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    overview: Attribute.JSON;
-    statistics: Attribute.JSON;
-    travelTips: Attribute.JSON;
-    requirements: Attribute.JSON;
-    gallery: Attribute.Media;
-    testimonials: Attribute.JSON;
-    pricing: Attribute.JSON;
-    registrationSteps: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::destination.destination',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::destination.destination',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProgramProgram extends Schema.CollectionType {
-  collectionName: 'programs';
-  info: {
-    singularName: 'program';
-    pluralName: 'programs';
-    displayName: 'Programs';
-    description: 'Programas de estudio y trabajo en el extranjero';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 255;
-      }>;
-    slug: Attribute.UID<'api::program.program', 'title'> & Attribute.Required;
-    description: Attribute.RichText & Attribute.Required;
-    shortDescription: Attribute.Text &
-      Attribute.SetMinMaxLength<{
-        maxLength: 500;
-      }>;
-    imageUrl: Attribute.String & Attribute.Required;
-    destinations: Attribute.JSON;
-    duration: Attribute.JSON;
-    ageRequirement: Attribute.JSON;
-    englishLevel: Attribute.String;
-    programType: Attribute.Enumeration<
-      [
-        'work-and-travel',
-        'estudios-exterior',
-        'practicas-pasantias',
-        'au-pair',
-        'voluntariados'
-      ]
-    > &
-      Attribute.Required;
-    price: Attribute.Decimal & Attribute.Required;
-    currency: Attribute.String & Attribute.DefaultTo<'USD'>;
-    featuredImage: Attribute.Media & Attribute.Required;
-    gallery: Attribute.Media;
-    featured: Attribute.Boolean & Attribute.DefaultTo<false>;
-    active: Attribute.Boolean & Attribute.DefaultTo<true>;
-    destination: Attribute.Relation<
-      'api::program.program',
-      'manyToOne',
-      'api::destination.destination'
-    >;
-    ageRange: Attribute.JSON;
-    requirements: Attribute.JSON;
-    benefits: Attribute.JSON;
-    inclusions: Attribute.JSON;
-    exclusions: Attribute.JSON;
-    itinerary: Attribute.JSON;
-    accommodation: Attribute.JSON;
-    meals: Attribute.JSON;
-    transportation: Attribute.JSON;
-    activities: Attribute.JSON;
-    support: Attribute.JSON;
-    certification: Attribute.JSON;
-    languageRequirements: Attribute.JSON;
-    applicationProcess: Attribute.JSON;
-    deadlines: Attribute.JSON;
-    testimonials: Attribute.JSON;
-    faq: Attribute.JSON;
-    pricing: Attribute.JSON;
-    careerOpportunities: Attribute.JSON;
-    culturalExperience: Attribute.JSON;
-    safety: Attribute.JSON;
-    insurance: Attribute.JSON;
-    visaSupport: Attribute.JSON;
-    seoTitle: Attribute.String;
-    seoDescription: Attribute.Text;
-    seoKeywords: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::program.program',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::program.program',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-=======
->>>>>>> Stashed changes
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -952,6 +788,94 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlogCategoryBlogCategory extends Schema.CollectionType {
+  collectionName: 'blog_categories';
+  info: {
+    singularName: 'blog-category';
+    pluralName: 'blog-categories';
+    displayName: 'Blog Category';
+    description: 'Categor\u00EDas para las publicaciones del blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    slug: Attribute.UID<'api::blog-category.blog-category', 'name'>;
+    description: Attribute.Text;
+    icon: Attribute.String;
+    blogPosts: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'oneToMany',
+      'api::blog-post.blog-post'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-category.blog-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBlogPostBlogPost extends Schema.CollectionType {
+  collectionName: 'blog_posts';
+  info: {
+    singularName: 'blog-post';
+    pluralName: 'blog-posts';
+    displayName: 'Blog Post';
+    description: 'Publicaciones del blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    slug: Attribute.UID<'api::blog-post.blog-post', 'title'>;
+    excerpt: Attribute.Text & Attribute.Required;
+    content: Attribute.RichText & Attribute.Required;
+    featuredImage: Attribute.Media & Attribute.Required;
+    author: Attribute.Component<'shared.author'>;
+    category: Attribute.Relation<
+      'api::blog-post.blog-post',
+      'manyToOne',
+      'api::blog-category.blog-category'
+    >;
+    tags: Attribute.JSON;
+    publishedAt: Attribute.DateTime;
+    readTime: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-post.blog-post',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-post.blog-post',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiDestinationDestination extends Schema.CollectionType {
   collectionName: 'destinations';
   info: {
@@ -1165,6 +1089,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
+      'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::destination.destination': ApiDestinationDestination;
       'api::program.program': ApiProgramProgram;
       'api::program-type.program-type': ApiProgramTypeProgramType;

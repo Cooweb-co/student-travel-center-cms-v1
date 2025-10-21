@@ -1,0 +1,30 @@
+{
+  "collectionName": "shared_authors",
+  "info": {
+    "displayName": "Author",
+    "description": "Información del autor de una publicación"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "role": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}
