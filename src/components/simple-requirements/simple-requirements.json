@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_simple_requirements",
+  "info": {
+    "displayName": "Simple Requirements",
+    "description": "Simple requirements component with icon and title"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

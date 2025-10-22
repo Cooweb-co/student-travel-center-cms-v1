@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_casos_exito",
+  "info": {
+    "displayName": "Casos de Éxito",
+    "description": "Success stories component with testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "estrellas": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    "testimonio": {
+      "type": "text",
+      "required": true
+    },
+    "carrera": {
+      "type": "string",
+      "required": true
+    },
+    "destino": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

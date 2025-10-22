@@ -84,6 +84,21 @@
       "repeatable": true,
       "component": "why-program.why-program"
     },
+    "simple_requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "simple-requirements.simple-requirements"
+    },
+    "why_stc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-stc.why-stc"
+    },
+    "casos_exito": {
+      "type": "component",
+      "repeatable": true,
+      "component": "casos-exito.casos-exito"
+    },
     "faq": {
       "type": "component",
       "repeatable": true,
