@@ -45,12 +45,10 @@
       "inversedBy": "programs"
     },
     "duration": {
-      "type": "component",
-      "repeatable": false,
-      "component": "duration.duration"
+      "type": "string"
     },
     "startDates": {
-      "type": "json"
+      "type": "string"
     },
     "price": {
       "type": "decimal",
@@ -69,10 +67,12 @@
       "type": "json"
     },
     "planificacion": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-planificacion.program-planificacion"
     },
     "solvencia_economica": {
-      "type": "json"
+      "type": "string"
     },
     "requirements": {
       "type": "component",
