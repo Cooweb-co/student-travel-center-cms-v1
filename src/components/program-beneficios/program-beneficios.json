@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_program_beneficios",
+  "info": {
+    "displayName": "Program Beneficios",
+    "description": "Program benefits component with multiple categories"
+  },
+  "options": {},
+  "attributes": {
+    "programa": {
+      "type": "json",
+      "required": false
+    },
+    "pais": {
+      "type": "json",
+      "required": false
+    },
+    "razones_experiencia": {
+      "type": "json",
+      "required": false
+    },
+    "lugares_iconicos": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

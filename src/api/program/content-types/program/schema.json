@@ -58,13 +58,19 @@
       "type": "json"
     },
     "como_ayuda_agencia": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "como-ayuda-agencia.como-ayuda-agencia"
     },
     "beneficios": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-beneficios.program-beneficios"
     },
     "visa": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-visa.program-visa"
     },
     "planificacion": {
       "type": "component",
