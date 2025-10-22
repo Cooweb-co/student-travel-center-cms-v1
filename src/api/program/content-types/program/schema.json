@@ -79,6 +79,11 @@
       "repeatable": false,
       "component": "program-requirements.program-requirements"
     },
+    "why_program": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-program.why-program"
+    },
     "faq": {
       "type": "component",
       "repeatable": true,

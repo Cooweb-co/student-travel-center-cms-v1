@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_why_program",
+  "info": {
+    "displayName": "Why Program",
+    "description": "Component for program benefits and features"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
