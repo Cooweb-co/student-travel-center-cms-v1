@@ -40,8 +40,9 @@
     },
     "location": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::destination.destination"
+      "relation": "manyToMany",
+      "target": "api::destination.destination",
+      "inversedBy": "programs"
     },
     "duration": {
       "type": "component",
