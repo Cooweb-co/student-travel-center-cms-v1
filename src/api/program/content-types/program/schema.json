@@ -110,6 +110,11 @@
       "repeatable": true,
       "component": "faq.faq"
     },
+    "tipos_programas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tipos-programas.tipos-programas"
+    },
     "oportunidades_laborales": {
       "type": "component",
       "repeatable": false,
