@@ -110,6 +110,11 @@
       "repeatable": true,
       "component": "faq.faq"
     },
+    "tipos_actividades": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tipos-actividades.tipos-actividades"
+    },
     "noincluye": {
       "type": "json"
     }
