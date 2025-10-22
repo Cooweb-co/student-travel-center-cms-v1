@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_como_ayuda_agencia",
+  "info": {
+    "displayName": "Como Ayuda Agencia",
+    "description": "How the agency helps component with service descriptions"
+  },
+  "options": {},
+  "attributes": {
+    "pago": {
+      "type": "text",
+      "required": false
+    },
+    "matricula": {
+      "type": "text",
+      "required": false
+    },
+    "consultoria": {
+      "type": "text",
+      "required": false
+    },
+    "apoyo_destino": {
+      "type": "text",
+      "required": false
+    },
+    "asesoramiento_visa": {
+      "type": "text",
+      "required": false
+    },
+    "bienvenida_destino": {
+      "type": "text",
+      "required": false
+    },
+    "migracion_renovacion": {
+      "type": "text",
+      "required": false
+    },
+    "reunion_pre_embarque": {
+      "type": "text",
+      "required": false
+    },
+    "alojamiento_salud_seguro_tiquetes": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

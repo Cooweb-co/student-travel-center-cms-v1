@@ -38,19 +38,17 @@
       "target": "api::program-type.program-type",
       "inversedBy": "programs"
     },
-    "location": {
+    "destinos": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::destination.destination",
       "inversedBy": "programs"
     },
     "duration": {
-      "type": "component",
-      "repeatable": false,
-      "component": "duration.duration"
+      "type": "string"
     },
     "startDates": {
-      "type": "json"
+      "type": "string"
     },
     "price": {
       "type": "decimal",
@@ -60,27 +58,81 @@
       "type": "json"
     },
     "como_ayuda_agencia": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "como-ayuda-agencia.como-ayuda-agencia"
     },
     "beneficios": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-beneficios.program-beneficios"
     },
     "visa": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-visa.program-visa"
     },
     "planificacion": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "program-planificacion.program-planificacion"
     },
     "solvencia_economica": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "program-requirements.program-requirements"
+    },
+    "why_program": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-program.why-program"
+    },
+    "simple_requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "simple-requirements.simple-requirements"
+    },
+    "why_stc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-stc.why-stc"
+    },
+    "casos_exito": {
+      "type": "component",
+      "repeatable": true,
+      "component": "casos-exito.casos-exito"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq"
+    },
+    "tipos_programas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tipos-programas.tipos-programas"
+    },
+    "oportunidades_laborales": {
+      "type": "component",
+      "repeatable": false,
+      "component": "oportunidades-laborales.oportunidades-laborales"
+    },
+    "tipos_actividades": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tipos-actividades.tipos-actividades"
+    },
+    "vacantes_disponibles": {
       "type": "json"
     },
-    "Campos especificos de programas": {
-      "type": "dynamiczone",
-      "components": ["faq.faq"]
+    "carreras_afines": {
+      "type": "json"
     },
-    "Seccion de requerimientos": {
-      "type": "dynamiczone",
-      "components": ["requirement-internship.requirement-internship"]
+    "noincluye": {
+      "type": "json"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_program_visa",
+  "info": {
+    "displayName": "Program Visa",
+    "description": "Program visa information component"
+  },
+  "options": {},
+  "attributes": {
+    "tipos_visa": {
+      "type": "json",
+      "required": false
+    },
+    "diferencias_visas": {
+      "type": "text",
+      "required": false
+    },
+    "proceso_visado": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

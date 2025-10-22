@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_planificacion",
+  "info": {
+    "displayName": "Program Planificacion",
+    "description": "Program planning component"
+  },
+  "options": {},
+  "attributes": {
+    "duracion_programa": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
