@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_oportunidades_laborales",
+  "info": {
+    "displayName": "Oportunidades Laborales",
+    "description": "Job opportunities component with employment details"
+  },
+  "options": {},
+  "attributes": {
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "sectores_empleo": {
+      "type": "json",
+      "required": false
+    },
+    "nivel_ingles": {
+      "type": "string",
+      "required": false
+    },
+    "tiempo_empleo": {
+      "type": "string",
+      "required": false
+    },
+    "salario_promedio": {
+      "type": "json",
+      "required": false
+    },
+    "restricciones": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

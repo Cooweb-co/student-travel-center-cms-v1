@@ -110,6 +110,11 @@
       "repeatable": true,
       "component": "faq.faq"
     },
+    "oportunidades_laborales": {
+      "type": "component",
+      "repeatable": false,
+      "component": "oportunidades-laborales.oportunidades-laborales"
+    },
     "tipos_actividades": {
       "type": "component",
       "repeatable": true,
