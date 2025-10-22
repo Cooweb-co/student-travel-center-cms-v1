@@ -125,6 +125,12 @@
       "repeatable": true,
       "component": "tipos-actividades.tipos-actividades"
     },
+    "vacantes_disponibles": {
+      "type": "json"
+    },
+    "carreras_afines": {
+      "type": "json"
+    },
     "noincluye": {
       "type": "json"
     }
