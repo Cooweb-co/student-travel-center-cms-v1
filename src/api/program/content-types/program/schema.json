@@ -38,7 +38,7 @@
       "target": "api::program-type.program-type",
       "inversedBy": "programs"
     },
-    "location": {
+    "destinos": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::destination.destination",
