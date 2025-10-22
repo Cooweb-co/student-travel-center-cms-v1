@@ -109,6 +109,9 @@
       "type": "component",
       "repeatable": true,
       "component": "faq.faq"
+    },
+    "noincluye": {
+      "type": "json"
     }
   }
 }
