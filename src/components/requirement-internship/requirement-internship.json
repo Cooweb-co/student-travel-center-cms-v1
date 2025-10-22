@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_requirement_internships",
+  "info": {
+    "displayName": "Requirement Internship",
+    "description": "Requirements component for Internship programs"
+  },
+  "options": {},
+  "attributes": {
+    "personal": {
+      "type": "json",
+      "required": true
+    },
+    "documents": {
+      "type": "json",
+      "required": true
+    },
+    "academic": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
