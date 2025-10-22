@@ -40,8 +40,9 @@
     },
     "location": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::destination.destination"
+      "relation": "manyToMany",
+      "target": "api::destination.destination",
+      "inversedBy": "programs"
     },
     "duration": {
       "type": "component",
@@ -56,9 +57,6 @@
       "required": true
     },
     "features": {
-      "type": "json"
-    },
-    "requirements": {
       "type": "json"
     },
     "como_ayuda_agencia": {
@@ -79,6 +77,10 @@
     "Campos especificos de programas": {
       "type": "dynamiczone",
       "components": ["faq.faq"]
+    },
+    "Seccion de requerimientos": {
+      "type": "dynamiczone",
+      "components": ["requirement-internship.requirement-internship"]
     }
   }
 }
