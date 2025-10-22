@@ -74,13 +74,15 @@
     "solvencia_economica": {
       "type": "json"
     },
-    "Campos especificos de programas": {
-      "type": "dynamiczone",
-      "components": ["faq.faq"]
+    "requirements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "program-requirements.program-requirements"
     },
-    "Seccion de requerimientos": {
-      "type": "dynamiczone",
-      "components": ["requirement-internship.requirement-internship"]
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq"
     }
   }
 }
