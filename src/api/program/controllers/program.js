@@ -7,6 +7,84 @@
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::program.program', ({ strapi }) => ({
+  // Sobrescribir el método find para poblar todos los campos
+  async find(ctx) {
+    const populate = {
+      image: true,
+      programType: true,
+      destinos: true,
+      como_ayuda_agencia: true,
+      beneficios: true,
+      visa: true,
+      planificacion: true,
+      requirements: true,
+      why_program: true,
+      simple_requirements: true,
+      why_stc: true,
+      casos_exito: true,
+      faq: true,
+      tipos_programas: true,
+      oportunidades_laborales: true,
+      tipos_actividades: {
+        populate: {
+          image: true
+        }
+      },
+      testimonials: {
+        populate: {
+          image: true
+        }
+      }
+    };
+
+    ctx.query = {
+      ...ctx.query,
+      populate
+    };
+    
+    const { data, meta } = await super.find(ctx);
+    return { data, meta };
+  },
+
+  // Sobrescribir el método findOne para poblar todos los campos
+  async findOne(ctx) {
+    const populate = {
+      image: true,
+      programType: true,
+      destinos: true,
+      como_ayuda_agencia: true,
+      beneficios: true,
+      visa: true,
+      planificacion: true,
+      requirements: true,
+      why_program: true,
+      simple_requirements: true,
+      why_stc: true,
+      casos_exito: true,
+      faq: true,
+      tipos_programas: true,
+      oportunidades_laborales: true,
+      tipos_actividades: {
+        populate: {
+          image: true
+        }
+      },
+      testimonials: {
+        populate: {
+          image: true
+        }
+      }
+    };
+
+    ctx.query = {
+      ...ctx.query,
+      populate
+    };
+    
+    const { data, meta } = await super.findOne(ctx);
+    return { data, meta };
+  },
+
   // Método personalizado para obtener programas por tipo
   async findByType(ctx) {
     const { programType } = ctx.params;
