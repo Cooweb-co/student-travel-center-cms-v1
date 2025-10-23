@@ -131,6 +131,11 @@
     "carreras_afines": {
       "type": "json"
     },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonials.testimonials"
+    },
     "noincluye": {
       "type": "json"
     }
