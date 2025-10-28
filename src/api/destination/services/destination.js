@@ -14,7 +14,12 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
       populate: {
         image: true,
         gallery: true,
-        programs: true
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        }
       }
     });
 
@@ -88,7 +93,12 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
     const destinations = await strapi.entityService.findMany('api::destination.destination', {
       filters: { active: true },
       populate: {
-        programs: true
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        }
       }
     });
 

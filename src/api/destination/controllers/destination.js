@@ -15,7 +15,12 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true,
         ...ctx.query.populate
       }
@@ -32,7 +37,12 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true,
         ...ctx.query.populate
       }
@@ -48,7 +58,12 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true
       }
     });
