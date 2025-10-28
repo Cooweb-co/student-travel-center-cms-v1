@@ -13,7 +13,8 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
       filters: { active: true },
       populate: {
         image: true,
-        gallery: true
+        gallery: true,
+        programs: true
       }
     });
 
@@ -85,7 +86,10 @@ module.exports = createCoreService('api::destination.destination', ({ strapi }) 
   // Método para obtener información de programas
   async findPrograms() {
     const destinations = await strapi.entityService.findMany('api::destination.destination', {
-      filters: { active: true }
+      filters: { active: true },
+      populate: {
+        programs: true
+      }
     });
 
     return destinations.map(item => ({

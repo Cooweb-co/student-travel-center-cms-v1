@@ -77,7 +77,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::program.program",
-      "mappedBy": "location"
+      "mappedBy": "destinos"
     }
   }
 }
