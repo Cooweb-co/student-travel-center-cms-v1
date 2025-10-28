@@ -15,12 +15,30 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
+        programs: true,
         programTypes: true,
         ...ctx.query.populate
       }
     });
     
     return { data: entities, meta: {} };
+  },
+
+  // Sobrescribir findOne para incluir campos por defecto
+  async findOne(ctx) {
+    const { id } = ctx.params;
+    const entity = await strapi.entityService.findOne('api::destination.destination', id, {
+      ...ctx.query,
+      populate: {
+        image: true,
+        gallery: true,
+        programs: true,
+        programTypes: true,
+        ...ctx.query.populate
+      }
+    });
+    
+    return { data: entity };
   },
 
   // Método personalizado para obtener información completa de un destino
@@ -30,6 +48,7 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
+        programs: true,
         programTypes: true
       }
     });
