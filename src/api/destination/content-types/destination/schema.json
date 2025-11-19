@@ -62,23 +62,6 @@
       "repeatable": true,
       "component": "travel-tips.tip"
     },
-    "requirements": {
-      "type": "json"
-    },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": ["images"]
-    },
-    "testimonials": {
-      "type": "json"
-    },
-    "pricing": {
-      "type": "json"
-    },
-    "registrationSteps": {
-      "type": "json"
-    },
     "programs": {
       "type": "relation",
       "relation": "manyToMany",
