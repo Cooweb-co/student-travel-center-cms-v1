@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_travel_tips_tips",
+  "info": {
+    "displayName": "Travel Tip",
+    "description": "Consejo de viaje con título y detalle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

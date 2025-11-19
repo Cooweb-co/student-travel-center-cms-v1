@@ -15,7 +15,20 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        overview: {
+          populate: {
+            features: true,
+            highlights: true
+          }
+        },
+        statistics: true,
+        travelTips: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true,
         ...ctx.query.populate
       }
@@ -32,7 +45,20 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        overview: {
+          populate: {
+            features: true,
+            highlights: true
+          }
+        },
+        statistics: true,
+        travelTips: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true,
         ...ctx.query.populate
       }
@@ -48,7 +74,20 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       populate: {
         image: true,
         gallery: true,
-        programs: true,
+        overview: {
+          populate: {
+            features: true,
+            highlights: true
+          }
+        },
+        statistics: true,
+        travelTips: true,
+        programs: {
+          populate: {
+            programType: true,
+            image: true
+          }
+        },
         programTypes: true
       }
     });
@@ -66,7 +105,9 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
         featured: true
       },
       populate: {
-        image: true
+        image: true,
+        statistics: true,
+        travelTips: true
       }
     });
 
@@ -78,7 +119,9 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
     const entities = await strapi.entityService.findMany('api::destination.destination', {
       filters: { active: true },
       populate: {
-        image: true
+        image: true,
+        statistics: true,
+        travelTips: true
       }
     });
 
@@ -97,7 +140,8 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
     const entities = await strapi.entityService.findMany('api::destination.destination', {
       filters: { active: true },
       populate: {
-        image: true
+        image: true,
+        travelTips: true
       }
     });
 

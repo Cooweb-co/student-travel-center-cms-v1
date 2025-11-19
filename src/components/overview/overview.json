@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_overview_overviews",
+  "info": {
+    "displayName": "Overview",
+    "description": "Resumen estructurado del destino con secciones de características y puntos destacados"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.feature",
+      "required": false
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "overview.highlight",
+      "required": false
+    }
+  }
+}

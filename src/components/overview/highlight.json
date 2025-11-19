@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_overview_highlight",
+  "info": {
+    "displayName": "Overview Highlight",
+    "description": "Elemento destacado con icono para resaltar puntos clave del destino"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Star",
+        "GraduationCap",
+        "Globe2",
+        "Calendar",
+        "TrendingUp",
+        "Utensils",
+        "Palm",
+        "Building",
+        "Network",
+        "Crown",
+        "Briefcase",
+        "Users",
+        "Heart",
+        "MapPin",
+        "Landmark",
+        "Plane",
+        "🎓",
+        "📝",
+        "💶",
+        "💼"
+      ],
+      "required": true,
+      "info": {
+        "displayName": "Icono",
+        "description": "Selecciona el icono a utilizar en el destacado"
+      }
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -48,30 +48,19 @@
       "default": false
     },
     "overview": {
-      "type": "json"
+      "type": "component",
+      "repeatable": false,
+      "component": "overview.overview"
     },
     "statistics": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "destination-statistics.statistic"
     },
     "travelTips": {
-      "type": "json"
-    },
-    "requirements": {
-      "type": "json"
-    },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": ["images"]
-    },
-    "testimonials": {
-      "type": "json"
-    },
-    "pricing": {
-      "type": "json"
-    },
-    "registrationSteps": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "travel-tips.tip"
     },
     "programs": {
       "type": "relation",
