@@ -58,7 +58,9 @@
       "component": "destination-statistics.statistic"
     },
     "travelTips": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "travel-tips.tip"
     },
     "requirements": {
       "type": "json"

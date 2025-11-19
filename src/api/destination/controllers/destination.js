@@ -22,6 +22,7 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
           }
         },
         statistics: true,
+        travelTips: true,
         programs: {
           populate: {
             programType: true,
@@ -51,6 +52,7 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
           }
         },
         statistics: true,
+        travelTips: true,
         programs: {
           populate: {
             programType: true,
@@ -79,6 +81,7 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
           }
         },
         statistics: true,
+        travelTips: true,
         programs: {
           populate: {
             programType: true,
@@ -103,7 +106,8 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       },
       populate: {
         image: true,
-        statistics: true
+        statistics: true,
+        travelTips: true
       }
     });
 
@@ -116,7 +120,8 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
       filters: { active: true },
       populate: {
         image: true,
-        statistics: true
+        statistics: true,
+        travelTips: true
       }
     });
 
@@ -135,7 +140,8 @@ module.exports = createCoreController('api::destination.destination', ({ strapi 
     const entities = await strapi.entityService.findMany('api::destination.destination', {
       filters: { active: true },
       populate: {
-        image: true
+        image: true,
+        travelTips: true
       }
     });
 
