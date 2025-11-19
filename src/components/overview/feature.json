@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_overview_feature",
+  "info": {
+    "displayName": "Overview Feature",
+    "description": "Elemento individual para destacar una característica del destino"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
