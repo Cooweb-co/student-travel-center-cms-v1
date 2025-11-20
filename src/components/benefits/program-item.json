@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_benefits_program_items",
+  "info": {
+    "displayName": "Program Item",
+    "description": "Elemento individual para el apartado de programa"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

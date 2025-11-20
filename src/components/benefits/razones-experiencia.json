@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_benefits_razones_experiencia",
+  "info": {
+    "displayName": "Razones Experiencia",
+    "description": "Razón para elegir la experiencia"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "benefits.razones-experiencia-item"
+    }
+  }
+}

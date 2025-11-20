@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_language",
+  "info": {
+    "displayName": "Requirements Language",
+    "description": "Requisitos de idioma del programa"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}

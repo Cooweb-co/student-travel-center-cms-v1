@@ -7,36 +7,44 @@
   "options": {},
   "attributes": {
     "generales": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "age": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "language": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "documents": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "personal": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "academic": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "estudios_6_meses_o_menos": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     },
     "estudios_mas_de_6_meses": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
     }
   }
 }

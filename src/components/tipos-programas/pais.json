@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_tipos_programas_paises",
+  "info": {
+    "displayName": "País de Idioma",
+    "description": "País donde se ofrece el idioma del programa"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

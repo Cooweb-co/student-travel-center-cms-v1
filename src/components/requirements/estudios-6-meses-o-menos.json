@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_estudios_6_meses_o_menos",
+  "info": {
+    "displayName": "Requirements Estudios 6 meses o menos",
+    "description": "Requisitos para estudios de 6 meses o menos"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}

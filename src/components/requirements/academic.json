@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_academic",
+  "info": {
+    "displayName": "Requirements Academic",
+    "description": "Requisitos académicos del programa"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}

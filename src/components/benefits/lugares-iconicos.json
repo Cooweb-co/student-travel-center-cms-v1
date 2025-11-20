@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_benefits_lugares_iconicos",
+  "info": {
+    "displayName": "Lugares Icónicos",
+    "description": "Lugar icónico destacado"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "benefits.lugares-iconicos-item"
+    }
+  }
+}
