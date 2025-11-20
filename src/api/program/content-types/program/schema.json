@@ -65,9 +65,13 @@
       "component": "como-ayuda-agencia.como-ayuda-agencia"
     },
     "beneficios": {
-      "type": "component",
-      "repeatable": false,
-      "component": "program-beneficios.program-beneficios"
+      "type": "dynamiczone",
+      "components": [
+        "benefits.program",
+        "benefits.pais",
+        "benefits.lugares-iconicos",
+        "benefits.razones-experiencia"
+      ]
     },
     "visa": {
       "type": "component",

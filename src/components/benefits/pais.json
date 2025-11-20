@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_benefits_paises",
+  "info": {
+    "displayName": "País",
+    "description": "Elemento de país para beneficios del programa"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "benefits.program-item"
+    }
+  }
+}

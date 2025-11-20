@@ -14,7 +14,13 @@ module.exports = createCoreController('api::program.program', ({ strapi }) => ({
       programType: true,
       destinos: true,
       como_ayuda_agencia: true,
-      beneficios: true,
+      beneficios: {
+        populate: {
+          item: {
+            populate: true
+          }
+        }
+      },
       visa: true,
       planificacion: true,
       features: true,
@@ -54,7 +60,13 @@ module.exports = createCoreController('api::program.program', ({ strapi }) => ({
       programType: true,
       destinos: true,
       como_ayuda_agencia: true,
-      beneficios: true,
+      beneficios: {
+        populate: {
+          item: {
+            populate: true
+          }
+        }
+      },
       visa: true,
       planificacion: true,
       features: true,
