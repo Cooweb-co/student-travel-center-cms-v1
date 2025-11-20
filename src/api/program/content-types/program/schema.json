@@ -55,7 +55,9 @@
       "required": true
     },
     "features": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "program-features.feature"
     },
     "como_ayuda_agencia": {
       "type": "component",
