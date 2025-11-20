@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_personal",
+  "info": {
+    "displayName": "Requirements Personal",
+    "description": "Requisitos personales del programa"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}

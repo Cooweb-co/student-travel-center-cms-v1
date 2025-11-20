@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_noincluye",
+  "info": {
+    "displayName": "Program No Incluye",
+    "description": "Elemento de cosas no incluidas en el programa"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

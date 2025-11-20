@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_requirement_items",
+  "info": {
+    "displayName": "Requirement Item",
+    "description": "Elemento individual de requisito de programa"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

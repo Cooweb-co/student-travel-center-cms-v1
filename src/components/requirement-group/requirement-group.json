@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_requirement_group_requirement_groups",
+  "info": {
+    "displayName": "Requirement Group",
+    "description": "Componente temporal para migrar requisitos antiguos"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "text"
+    }
+  }
+}

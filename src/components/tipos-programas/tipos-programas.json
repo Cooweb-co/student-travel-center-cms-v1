@@ -7,12 +7,14 @@
   "options": {},
   "attributes": {
     "idiomas": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "tipos-programas.idioma"
     },
     "educacion_superior": {
-      "type": "json",
-      "required": false
+      "type": "component",
+      "repeatable": true,
+      "component": "tipos-programas.educacion-superior-item"
     },
     "duracion": {
       "type": "text",

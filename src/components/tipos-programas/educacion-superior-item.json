@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_tipos_programas_educacion_superior_items",
+  "info": {
+    "displayName": "Área de Educación Superior",
+    "description": "Área o campo de estudio para educación superior"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

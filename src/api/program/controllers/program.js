@@ -21,17 +21,24 @@ module.exports = createCoreController('api::program.program', ({ strapi }) => ({
           }
         }
       },
-      visa: true,
       planificacion: true,
       features: true,
-      requirements: true,
+      requirements: {
+        populate: {
+          items: {
+            populate: true
+          }
+        }
+      },
       why_program: true,
       simple_requirements: true,
       why_stc: true,
       casos_exito: true,
       faq: true,
       tipos_programas: true,
-      oportunidades_laborales: true,
+      vacantes_disponibles: true,
+      carreras_afines: true,
+      noincluye: true,
       tipos_actividades: {
         populate: {
           image: true
@@ -77,7 +84,6 @@ module.exports = createCoreController('api::program.program', ({ strapi }) => ({
       casos_exito: true,
       faq: true,
       tipos_programas: true,
-      oportunidades_laborales: true,
       tipos_actividades: {
         populate: {
           image: true

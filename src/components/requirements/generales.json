@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_generales",
+  "info": {
+    "displayName": "Requirements Generales",
+    "description": "Requisitos generales del programa"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}

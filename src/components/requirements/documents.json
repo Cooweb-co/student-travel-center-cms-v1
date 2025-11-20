@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_requirements_documents",
+  "info": {
+    "displayName": "Requirements Documents",
+    "description": "Requisitos de documentos del programa"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-requirements.requirement-item"
+    }
+  }
+}
