@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_program_features",
+  "info": {
+    "displayName": "Program Feature",
+    "description": "Elemento para destacar una característica del programa"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}
