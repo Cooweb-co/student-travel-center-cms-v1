@@ -49,8 +49,9 @@
       "mappedBy": "blogPosts"
     },
     "tags": {
-      "type": "json",
-      "multiple": true
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-tags.tag"
     },
     "publishedAt": {
       "type": "datetime",

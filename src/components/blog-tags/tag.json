@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blog_tags_tags",
+  "info": {
+    "displayName": "Tag",
+    "description": "Etiqueta de blog"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
