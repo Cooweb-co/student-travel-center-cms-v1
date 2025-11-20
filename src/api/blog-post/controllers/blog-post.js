@@ -26,6 +26,10 @@ const ensureAuthorAvatarPopulate = (ctx) => {
 
   authorPopulate.avatar = true;
 
+  if (normalizedPopulate.featuredImage === undefined) {
+    normalizedPopulate.featuredImage = true;
+  }
+
   normalizedPopulate.author = {
     ...authorConfig,
     populate: authorPopulate,
