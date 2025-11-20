@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_benefits_razones_experiencia_items",
+  "info": {
+    "displayName": "Razón Experiencia Item",
+    "description": "Elemento individual de razón de experiencia"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "icono": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    }
+  }
+}

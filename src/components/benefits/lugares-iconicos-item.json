@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_benefits_lugares_iconicos_items",
+  "info": {
+    "displayName": "Lugar Icónico Item",
+    "description": "Elemento individual de lugar icónico para beneficios"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

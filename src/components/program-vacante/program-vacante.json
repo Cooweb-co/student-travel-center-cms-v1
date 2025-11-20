@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_vacantes",
+  "info": {
+    "displayName": "Program Vacante Disponible",
+    "description": "Elemento de vacante disponible del programa"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

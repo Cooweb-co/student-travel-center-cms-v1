@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_tipos_programas_idiomas",
+  "info": {
+    "displayName": "Idioma de Programa",
+    "description": "Idioma y países donde se ofrece"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "paises": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tipos-programas.pais"
+    }
+  }
+}

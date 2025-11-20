@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_carreras_afines",
+  "info": {
+    "displayName": "Program Carrera Afín",
+    "description": "Elemento de carrera afín del programa"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_requirements_age",
+  "info": {
+    "displayName": "Requirements Age",
+    "description": "Requisitos de edad del programa"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
