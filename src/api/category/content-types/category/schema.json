@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "blog_categories",
+  "collectionName": "categories",
   "info": {
-    "singularName": "blog-category",
-    "pluralName": "blog-categories",
-    "displayName": "Blog Category",
-    "description": "Categorías para las publicaciones del blog"
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category",
+    "description": "Categorías del nuevo blog"
   },
   "options": {
     "draftAndPublish": true
@@ -27,10 +27,10 @@
     "icon": {
       "type": "string"
     },
-    "blogPosts": {
+    "blogs": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::blog-post.blog-post",
+      "target": "api::blog.blog",
       "mappedBy": "category"
     }
   }
