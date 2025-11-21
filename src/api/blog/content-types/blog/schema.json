@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blog_posts",
+  "collectionName": "blogs",
   "info": {
-    "singularName": "blog-post",
-    "pluralName": "blog-posts",
-    "displayName": "Blog Post",
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
     "description": "Publicaciones del blog"
   },
   "options": {
@@ -44,9 +44,8 @@
     "category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::blog-category.blog-category",
-      "inversedBy": "blogPosts",
-      "mappedBy": "blogPosts"
+      "target": "api::category.category",
+      "inversedBy": "blogs"
     },
     "tags": {
       "type": "component",
