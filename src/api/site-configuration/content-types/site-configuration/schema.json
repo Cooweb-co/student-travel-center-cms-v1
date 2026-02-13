@@ -1,0 +1,27 @@
+{
+    "kind": "singleType",
+    "collectionName": "site_configuration",
+    "info": {
+        "singularName": "site-configuration",
+        "pluralName": "site-configurations",
+        "displayName": "Site Configuration",
+        "description": "General site configuration"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "whatsappNumber": {
+            "type": "string",
+            "required": true,
+            "regex": "^[0-9]+$",
+            "maxLength": 20
+        },
+        "whatsappDefaultMessage": {
+            "type": "text",
+            "required": false,
+            "default": ""
+        }
+    }
+}
