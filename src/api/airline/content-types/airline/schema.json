@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "airlines",
+    "info": {
+        "singularName": "airline",
+        "pluralName": "airlines",
+        "displayName": "Airlines",
+        "description": "Partner airlines"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "externalLink": {
+            "type": "string",
+            "required": false
+        }
+    }
+}

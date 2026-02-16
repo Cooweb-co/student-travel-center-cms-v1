@@ -1,0 +1,51 @@
+{
+    "kind": "collectionType",
+    "collectionName": "educational_institutions",
+    "info": {
+        "singularName": "educational-institution",
+        "pluralName": "educational-institutions",
+        "displayName": "Educational Institutions",
+        "description": "Partner educational institutions"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255
+        },
+        "category": {
+            "type": "enumeration",
+            "enum": [
+                "language_school",
+                "higher_education"
+            ],
+            "required": true
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "location": {
+            "type": "string",
+            "required": false,
+            "maxLength": 255
+        },
+        "programs": {
+            "type": "component",
+            "repeatable": true,
+            "component": "educational.program-item"
+        },
+        "externalLink": {
+            "type": "string",
+            "required": false
+        }
+    }
+}
