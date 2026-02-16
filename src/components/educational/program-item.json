@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_educational_program_items",
+    "info": {
+        "displayName": "Program Item",
+        "description": "Programa ofrecido por la institución"
+    },
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "maxLength": 255
+        }
+    }
+}
